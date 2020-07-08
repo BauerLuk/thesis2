@@ -42,16 +42,18 @@
 \contentsline {subsection}{\numberline {4.1.1}Initializing constants of motion}{75}{subsection.4.1.1}% 
 \contentsline {subsection}{\numberline {4.1.2}Particle pushing algorithm}{75}{subsection.4.1.2}% 
 \contentsline {subsubsection}{Initialize pusher}{76}{section*.42}% 
-\contentsline {subsubsection}{Initial guess of exit plane}{76}{section*.43}% 
-\contentsline {section}{\numberline {4.2}Pusher routine \texttt {pusher\_tetra\_orbit\_analytic}}{78}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Search routines for tetrahedra with starting points}{79}{section.4.3}% 
-\contentsline {chapter}{\numberline {5}Monte Carlo simulation of particle transport using \texttt {Gorilla}}{80}{chapter.5}% 
-\contentsline {chapter}{\numberline {6}Conclusion and outlook}{81}{chapter.6}% 
-\contentsline {chapter}{\numberline {A}Lagrange polynomial interpolation}{82}{appendix.A}% 
-\contentsline {section}{\numberline {A.1}Introduction}{82}{section.A.1}% 
-\contentsline {section}{\numberline {A.2}Application for a simple exponential}{82}{section.A.2}% 
-\contentsline {chapter}{\numberline {B}Runge-Kutta integration}{84}{appendix.B}% 
-\contentsline {section}{\numberline {B.1}General formulation}{84}{section.B.1}% 
-\contentsline {section}{\numberline {B.2}RK4 with application}{85}{section.B.2}% 
-\contentsline {section}{\numberline {B.3}Runge-Kutta-Fehlberg - RK45}{87}{section.B.3}% 
-\contentsline {chapter}{\nameref {chp:bibliography}}{88}{appendix*.48}% 
+\contentsline {subsubsection}{Initial guess of exit plane}{77}{section*.43}% 
+\contentsline {subsection}{\numberline {4.1.3}Convergence and validation loop \texttt {conv\_val\_loop}}{77}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Final processing}{81}{subsection.4.1.4}% 
+\contentsline {section}{\numberline {4.2}Pusher routine \texttt {pusher\_tetra\_orbit\_analytic}}{82}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Search routines for tetrahedra with starting points}{83}{section.4.3}% 
+\contentsline {chapter}{\numberline {5}Monte Carlo simulation of particle transport using \texttt {Gorilla}}{84}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}Conclusion and outlook}{85}{chapter.6}% 
+\contentsline {chapter}{\numberline {A}Lagrange polynomial interpolation}{86}{appendix.A}% 
+\contentsline {section}{\numberline {A.1}Introduction}{86}{section.A.1}% 
+\contentsline {section}{\numberline {A.2}Application for a simple exponential}{86}{section.A.2}% 
+\contentsline {chapter}{\numberline {B}Runge-Kutta integration}{88}{appendix.B}% 
+\contentsline {section}{\numberline {B.1}General formulation}{88}{section.B.1}% 
+\contentsline {section}{\numberline {B.2}RK4 with application}{89}{section.B.2}% 
+\contentsline {section}{\numberline {B.3}Runge-Kutta-Fehlberg - RK45}{91}{section.B.3}% 
+\contentsline {chapter}{\nameref {chp:bibliography}}{92}{appendix*.48}% 
