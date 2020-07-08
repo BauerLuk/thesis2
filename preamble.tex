@@ -1,0 +1,106 @@
+
+\documentclass[a4paper, 12pt, numbers=noenddot, chapterprefix=true, appendixprefix=true]{report}
+
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{fancyhdr}
+\usepackage[a4paper, bindingoffset=4mm, left=27mm, right=27mm, top=30mm, bottom=30mm]{geometry}
+
+
+\setlength{\parindent}{0cm}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{microtype}
+
+
+\usepackage{amsmath,amssymb,amstext}[fleqn]
+\usepackage{float}
+%\usepackage{subfig}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{picinpar}
+\usepackage{wrapfig}
+\usepackage{hyperref} % Für die Verwendung von URLs
+\usepackage{gensymb}
+%\usepackage[automark]{scrpage2}
+\usepackage[table,xcdraw]{xcolor}
+%\usepackage[stable]{footmisc} % Für Fußnoten in Sections
+\usepackage[normalem]{ulem}
+
+
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{pdfpages}
+
+
+
+
+
+\usepackage{listings}		% Notwendig für ff++listings
+%\usepackage{ff++listings}	% ff++listings ermöglicht die Darstellung von FreeFEM++-Code
+
+
+%\usepackage{geometry} % Seitenränder bearbeiten
+
+\usepackage{pgfplots} % Für die Verwendung von Plots mit TIKZ
+\pgfplotsset{compat=1.10} 
+
+\usetikzlibrary{external} 	% Die PGF-Plots mit TIKZ werden extern berechnet
+\tikzexternalize[prefix=tikz/]	% Die berechneten Plots werden in den Ordner "tikz" gespeichert
+% Für die externe Berechnung wird lualatex verwendet.
+\tikzset{external/system call={lualatex \tikzexternalcheckshellescape -halt-on-error -interaction=batchmode -jobname "\image" "\texsource"}}
+
+
+
+%\geometry{a4paper,left=2.7cm,right=2.7cm, top=4cm, bottom=4cm}
+\pagestyle{fancy}
+\fancypagestyle{MyStyle}{%
+	\fancyhead{} %Clean headers
+	\fancyhead[RO]{\slshape\nouppercase{\leftmark}}
+	\fancyhead[LE]{\slshape\nouppercase{\leftmark}}
+	\renewcommand{\chaptermark}[1]{\markboth{ {\slshape{##1}}}{}}
+}
+
+\fancypagestyle{plain}{\fancyhead{} %Clean headers
+	\fancyhead[RO]{\slshape\nouppercase{\leftmark}}
+	\fancyhead[LE]{\slshape\nouppercase{\leftmark}}
+	\renewcommand{\chaptermark}[1]{\markboth{ {\slshape{##1}}}{}}}
+
+\pagestyle{fancy} %eigener Seitenstil
+\lhead{}
+\chead{}
+%\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+%\fancyhead[L]{Titel} %Kopfzeile links
+%\fancyhead[C]{} %zentrierte Kopfzeile
+%\fancyhead[R]{Name} %Kopfzeile rechts
+\renewcommand{\headrulewidth}{0.4pt} %obere Trennlinie
+%\fancyfoot[C]{\thepage} %Seitennummer
+\renewcommand{\footrulewidth}{0.4pt} %untere Trennlinie
+
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@makechapterhead}{50\p@}{0pt}{}{}
+\patchcmd{\@makeschapterhead}{50\p@}{0pt}{}{}
+\makeatother
+
+
+
+
+
+%%LUKAS PREAMBLE
+\graphicspath{{figures/}{../figures/}}
+\usepackage{siunitx}
+\usepackage{caption}
+\captionsetup[table]{singlelinecheck=false}
+\usepackage{subcaption}
+\usepackage{listings}		% Notwendig für ff++listings
+\usepackage{pgfplots} % Für die Verwendung von Plots mit TIKZ
+\pgfplotsset{compat=1.10} 
+\usepackage{amsmath,xparse}
+\usepackage{subfiles}
+\usepackage{bm}
+\usepackage{mathrsfs}
+\usepackage{csquotes}

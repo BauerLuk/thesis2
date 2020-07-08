@@ -1,0 +1,124 @@
+
+
+%LUKAS COMMANDS
+	\newcommand{\be}[1]{\begin{equation} \label{#1}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}[1]{\begin{eqnarray} \label{#1}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\bean}{\begin{eqnarray*}}
+	\newcommand{\eean}{\end{eqnarray*}}
+\newcommand{\non}{\nonumber\\}
+\newcommand{\eq}[1]{(\ref{#1})}
+\newcommand{\difp}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\bA}{{\textbf{A}}}
+\newcommand{\bB}{{\textbf{B}}}
+\newcommand{\bE}{{\textbf{E}}}
+\newcommand{\bG}{{\textbf{G}}}
+\newcommand{\bn}{{\textbf{n}}}
+\newcommand{\bN}{{\textbf{N}}}
+\newcommand{\bR}{{\textbf{R}}}
+\newcommand{\bV}{{\textbf{V}}}
+\newcommand{\bX}{{\textbf{X}}}
+\newcommand{\bY}{{\textbf{Y}}}
+\newcommand{\bZ}{{\textbf{Z}}}
+\newcommand{\bor}{{\textbf r}}
+\newcommand{\bp}{{\textbf{p}}}
+\newcommand{\bx}{{\textbf{x}}}
+\newcommand{\bv}{{\textbf{v}}}
+\newcommand{\by}{{\textbf{y}}}
+\newcommand{\bz}{{\textbf{z}}}
+\newcommand{\cE}{{\cal E}}
+\newcommand{\cH}{{\cal H}}
+\newcommand{\rd}{{\textrm d}}
+\newcommand{\rdt}{\frac{\rd }{\rd t}}
+\newcommand{\ph}{{\varphi}}
+\newcommand{\Bpstar}{B_\parallel^*}
+\newcommand{\intpi}{\int\limits_{0}^{2\pi}}
+\newcommand{\summ}{\sum \limits_{m=-\infty}^\infty}
+\newcommand{\tb}{\tau_b(\uv)}
+\newcommand{\bh}{{\textbf{h}}}
+\newcommand{\odtwo}[2]{\frac{\rd #1}{\rd #2}}
+\newcommand{\pdone}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\varte}{\vartheta}
+\newcommand{\vpar}{v_\parallel}
+%\newcommand{\vll0}{v_{\parallel 0}}
+\newcommand{\vper}{v_\perp}
+%\newcommand{\vt0}{v_{\perp 0}}
+%\tighten
+\newcommand{\circled[1]}{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+%\newcommand{\be}[1]{\begin{equation} \label{#1}}
+%\newcommand{\ee}{\end{equation}}
+%\newcommand{\bea}[1]{\begin{eqnarray} \label{#1}}
+%\newcommand{\eea}{\end{eqnarray}}
+%\newcommand{\bean}{\begin{eqnarray*}}
+%	\newcommand{\eean}{\end{eqnarray*}}
+%\newcommand{\non}{\nonumber\\}
+%\newcommand{\eq}[1]{(\ref{#1})}
+%\newcommand{\difp}[2]{\frac{\partial #1}{\partial #2}}
+%\newcommand{\bA}{{\bf A}}
+\newcommand{\ba}{{\bf a}}
+%\newcommand{\bB}{{\bf B}}
+\newcommand{\bb}{{\bf b}}
+%\newcommand{\bE}{{\bf E}}
+%\newcommand{\bG}{{\bf G}}
+%\newcommand{\bn}{{\bf n}}
+%\newcommand{\bN}{{\bf N}}
+%\newcommand{\bR}{{\bf R}}
+%\newcommand{\bV}{{\bf V}}
+%\newcommand{\bX}{{\bf X}}
+%\newcommand{\bY}{{\bf Y}}
+%\newcommand{\bZ}{{\bf Z}}
+%\newcommand{\br}{{\bf r}}
+%\newcommand{\bp}{{\bf p}}
+%\newcommand{\bx}{{\bf x}}
+%\newcommand{\bv}{{\bf v}}
+%\newcommand{\by}{{\bf y}}
+%\newcommand{\bz}{{\bf z}}
+\newcommand{\bbf}{{\bf f}}
+%\newcommand{\cE}{{\cal E}}
+%\newcommand{\cH}{{\cal H}}
+%\newcommand{\rd}{{\rm d}}
+%\newcommand{\rdt}{\frac{\rd }{\rd t}}
+%\newcommand{\ph}{{\varphi}}
+%\newcommand{\Bpstar}{B_\parallel^*}
+%\newcommand{\intpi}{\int\limits_{0}^{2\pi}}
+%\newcommand{\summ}{\sum \limits_{m=-\infty}^\infty}
+%\newcommand{\tb}{\tau_b(\uv)}
+%\newcommand{\bh}{{\bf h}}
+%\newcommand{\odtwo}[2]{\frac{\rd #1}{\rd #2}}
+%\newcommand{\pdone}[1]{\frac{\partial}{\partial #1}}
+%\newcommand{\varte}{\vartheta}
+%\newcommand{\vpar}{v_\parallel}
+%\newcommand{\vll0}{v_{\parallel 0}}
+%\newcommand{\vper}{v_\perp}	
+	
+%global shortcuts sergei
+\global\long\def\tht{\vartheta}%
+%\global\long\def\ph{\varphi}%
+\global\long\def\balpha{\boldsymbol{\alpha}}%
+\global\long\def\btheta{\boldsymbol{\theta}}%
+\global\long\def\bJ{\boldsymbol{J}}%
+\global\long\def\bGamma{\boldsymbol{\Gamma}}%
+\global\long\def\bOmega{\boldsymbol{\Omega}}%
+\global\long\def\d{\text{d}}%
+\global\long\def\t#1{\text{#1}}%
+\global\long\def\m{\text{m}}%
+\global\long\def\v#1{\boldsymbol{#1}}%
+\global\long\def\u#1{\underline{#1}}%
+
+\global\long\def\t#1{\mathbf{#1}}%
+%\global\long\def\bA{\boldsymbol{A}}%
+%\global\long\def\bB{\boldsymbol{B}}%
+\global\long\def\c{\mathrm{c}}%
+%\global\long\def\difp#1#2{\frac{\partial#1}{\partial#2}}%
+\global\long\def\xset{{\bf x}}%
+\global\long\def\zset{{\bf z}}%
+\global\long\def\qset{{\bf q}}%
+\global\long\def\pset{{\bf p}}%
+\global\long\def\wset{{\bf w}}%
+\global\long\def\rset{{\bf r}}%
+\global\long\def\yset{\mathbf{y}}%	
+	
+	

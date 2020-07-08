@@ -1,0 +1,7 @@
+\BOOKMARK [0][-]{appendix.A}{Lagrange polynomial interpolation}{}% 1
+\BOOKMARK [1][-]{section.A.1}{Introduction}{appendix.A}% 2
+\BOOKMARK [1][-]{section.A.2}{Application for a simple exponential}{appendix.A}% 3
+\BOOKMARK [0][-]{appendix.B}{Runge-Kutta integration}{}% 4
+\BOOKMARK [1][-]{section.B.1}{General formulation}{appendix.B}% 5
+\BOOKMARK [1][-]{section.B.2}{RK4 with application}{appendix.B}% 6
+\BOOKMARK [1][-]{section.B.3}{Runge-Kutta-Fehlberg - RK45}{appendix.B}% 7

@@ -1,0 +1,57 @@
+\babel@toc {english}{}
+\contentsline {chapter}{Abstract}{3}{section*.1}% 
+\contentsline {chapter}{\numberline {1}Introduction}{9}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Overview - GORILLA}{9}{section.1.1}% 
+\contentsline {chapter}{\numberline {2}Grid Implementations for $Gorilla$}{10}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Requirements and structure}{10}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Cylindrical contour Grid}{12}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Generating the vertices}{12}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Get correct vertices of tetrahedra}{13}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Get neighbors of tetrahedra}{14}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.2.4}Periodic boundary conditions}{15}{subsection.2.2.4}% 
+\contentsline {subsection}{\numberline {2.2.5}Grid visualization}{16}{subsection.2.2.5}% 
+\contentsline {subsection}{\numberline {2.2.6}Field lines in cylindrical contour grid using cylindrical coordinates}{16}{subsection.2.2.6}% 
+\contentsline {section}{\numberline {2.3}Field Aligned Grid}{18}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Field lines in toroidal fusion devices and safety factor}{18}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Field line integration and splining of axisymmetric fields}{19}{subsection.2.3.2}% 
+\contentsline {subsubsection}{Find O-point (magnetic axis)}{20}{section*.9}% 
+\contentsline {subsubsection}{Find X-point}{21}{section*.10}% 
+\contentsline {subsubsection}{Scanning flux surfaces}{22}{section*.11}% 
+\contentsline {subsubsection}{Interpolation of data with respect to $\vartheta $ and normalization}{25}{section*.13}% 
+\contentsline {subsubsection}{s interpolation of data}{25}{section*.14}% 
+\contentsline {subsection}{\numberline {2.3.3}Field aligned grid generation}{26}{subsection.2.3.3}% 
+\contentsline {subsubsection}{make\_grid\_aligned}{30}{section*.19}% 
+\contentsline {subsubsection}{create\_points}{30}{section*.20}% 
+\contentsline {subsubsection}{create\_points\_2d}{31}{section*.21}% 
+\contentsline {subsubsection}{extrude\_points}{34}{section*.24}% 
+\contentsline {subsubsection}{calc\_mesh}{36}{section*.25}% 
+\contentsline {chapter}{\numberline {3}Analytical treatment of equations of motion in \textit {Gorilla}}{52}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Analytical solution of equations of motion}{52}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Reduction to a set of three linear ODEs}{53}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Homogeneous solution to equation of motion}{54}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}Particular solution: variation of constants}{55}{subsection.3.1.3}% 
+\contentsline {subsection}{\numberline {3.1.4}Axisymmetric case}{58}{subsection.3.1.4}% 
+\contentsline {subsection}{\numberline {3.1.5}Axisymmetric homogeneous solution}{58}{subsection.3.1.5}% 
+\contentsline {subsection}{\numberline {3.1.6}Axisymmetric particular solution: variation of constants}{60}{subsection.3.1.6}% 
+\contentsline {section}{\numberline {3.2}Integration of equations of motion with RK4}{63}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Derivation of the RK4-Error for \textit {Gorilla}}{63}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Taylor expansion of the analytical solution}{66}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3.3}Measurement of the RK4 error}{68}{section.3.3}% 
+\contentsline {chapter}{\numberline {4}Particle orbit pusher algorithms}{72}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Pusher routine \texttt {pusher\_tetra\_orbit}}{73}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Initializing constants of motion}{75}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Particle pushing algorithm}{75}{subsection.4.1.2}% 
+\contentsline {subsubsection}{Initialize pusher}{76}{section*.42}% 
+\contentsline {subsubsection}{Initial guess of exit plane}{76}{section*.43}% 
+\contentsline {section}{\numberline {4.2}Pusher routine \texttt {pusher\_tetra\_orbit\_analytic}}{78}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Search routines for tetrahedra with starting points}{79}{section.4.3}% 
+\contentsline {chapter}{\numberline {5}Monte Carlo simulation of particle transport using \texttt {Gorilla}}{80}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}Conclusion and outlook}{81}{chapter.6}% 
+\contentsline {chapter}{\numberline {A}Lagrange polynomial interpolation}{82}{appendix.A}% 
+\contentsline {section}{\numberline {A.1}Introduction}{82}{section.A.1}% 
+\contentsline {section}{\numberline {A.2}Application for a simple exponential}{82}{section.A.2}% 
+\contentsline {chapter}{\numberline {B}Runge-Kutta integration}{84}{appendix.B}% 
+\contentsline {section}{\numberline {B.1}General formulation}{84}{section.B.1}% 
+\contentsline {section}{\numberline {B.2}RK4 with application}{85}{section.B.2}% 
+\contentsline {section}{\numberline {B.3}Runge-Kutta-Fehlberg - RK45}{87}{section.B.3}% 
+\contentsline {chapter}{\nameref {chp:bibliography}}{88}{appendix*.48}% 

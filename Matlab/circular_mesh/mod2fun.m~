@@ -1,0 +1,12 @@
+function [ out ] = ind2fun(in,gSize)
+%MOD2FUN Takes the indices (i,j) of the vertex and returns the indices of
+%the vertices in [0,1]-direction, in the [1,0]-direction and the
+%[1,1]-direction, with periodicity in [0,1]-direction
+out = cell(3,2);
+out{:,2} = {}
+if (in(1)<gSize(1))
+    out{1,1} =  [mod(in(1)-1,gSize(1))+1,mod(in(2)-1,gSize(2))+1] ;
+else
+    
+end
+end

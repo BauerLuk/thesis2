@@ -1,0 +1,1172 @@
+\documentclass[../main.tex]{subfiles}
+\chapter{Derivation of analytical solution to equations of motion}
+
+
+%\title{Geometrical integrator for guiding center orbits
+%in non-axisymmetric fusion devices}
+
+%\author{ 
+%%S.~V.~Kasilov$^{1,2}$, A.~M.~Runov$^{3}$\footnote[4]{Corresponding
+%%author, runov@ipp.mpg.de, tel. +493834882432}
+%}
+
+%\affiliation{
+%$^{1}$Institute of Plasma Physics, National Science Center ``Kharkov
+%Institute of Physics and Technology'', 61108, Kharkov, Ukraine, \\
+%$^{2}$Fusion@\"OAW,\\
+%Institut f\"ur Theoretische Physik - Computational Physics,\\
+%Technische Universit\"at Graz \\
+%Petersgasse~16, A--8010 Graz, Austria
+%}
+
+%\affiliation{$^{3}$Max-Planck-Institut f\"ur Plasmaphysik,
+%D-17491 Greifswald, Germany}
+
+%\section{INTRODUCTION
+%
+%\section{Linear equations of motion - Introduction by Sergei}
+%\label{sec:linear_equations_sergei}
+%
+%\noindent
+%%Here we use the same idea of linear interpolation for all relevant quantities, but now in 3D.
+%Here we split the space into small cells and
+%approximate in each cell 
+%exact equations of motion by a set of linear ordinary differential equations.
+%This linear set has two exact properties: it conserves total energy and magnetic moment and
+%ensures that the orbits are divergence free in the coordinate space.
+%
+%\subsection{Guiding center equations in vector form and in curvilinear variables}
+%
+%\noindent
+%Divergence free (Hamiltonian) form of drift orbits is described by the lines of force of the effective
+%Morozov-Solov'ev field,
+%\be{morsolB}
+%\bB^\ast = \nabla\times\bA^\ast,
+%\ee
+%where the effective vector potential is expressed through magnetic field parameters and invariants of motion
+%$w$ (total energy) and $J_\perp$ (perpendicular adiabatic invariant) as follows
+%\be{morsolA}
+%\bA^\ast = \bA+\frac{v_\parallel}{\omega_c}\bB,
+%\qquad
+%v_\parallel=\sigma \left(\frac{2}{m_\alpha}\left(w-J_\perp\omega_c-e_\alpha\Phi\right)\right)^{1/2},
+%\ee
+%where $\bA$, $\bB$, $\omega_c=e_\alpha B/(m_\alpha c)$ are usual vector-potential, magnetic field strength
+%and cyclotron frequency, respectively, $\Phi$ is electrostatic potential, and $\sigma$, $e_\alpha$, 
+%$m_\alpha$ and $c$ are parallel velocity sign,
+%particle change and mass and the speed of light, respectively. Note that $\bA^\ast=c{\bf P}/e_\alpha$ where
+%$\bf P$ is the canonical momentum in guiding center approximation.
+%Derivatives in~\eq{morsolB} are computed treating $v_\parallel$ as function of 
+%coordinates given by~\eq{morsolA} and treating $w=m_\alpha v^2/2+e_\alpha\Phi$ and 
+%$J_\perp=m_\alpha v_\perp^2/(2\omega_c)$ as constants,
+%and equations of guiding center motion are
+%\be{gcmot}
+%\dot \br = v_\parallel \frac{\bB^\ast}{B_\parallel^\ast},
+%\qquad
+%B_\parallel^\ast = \bh\cdot \bB^\ast,
+%\ee
+%with $\bh=\bB/B$ being the unit vector along the magnetic field.
+%
+%\noindent
+%In curvilinear variables $x^i$ equations of motion~\eq{gcmot} are
+%\be{eqm_curv}
+%\dot x^i = \frac{v_\parallel \varepsilon^{ijk}}{\sqrt{g} B_\parallel^\ast}\difp{A^\ast_k}{x^j},
+%\ee
+%where $g$ is a metric determinant and
+%covariant components of effective vector potential $A^ \ast_k$ are expressed via covariant components
+%of vector potential $A_k$ and of the magnetic field $B_k$ as follows
+%\be{covarcomp}
+%A^\ast_k = A_k + \frac{v_\parallel}{\omega_c}B_k.
+%\ee
+%Introducing the notation
+%\be{defU}
+%\frac{v_\parallel^2}{2}=U=\frac{1}{m}\left(w-J_\perp\omega_c-e_\alpha\Phi\right)
+%\ee
+%we can write equation of motion for $v_\parallel$
+%\be{vpardot}
+%\dot v_\parallel = \frac{1}{v_\parallel}\dot x^i\difp{U}{x^i}
+%\ee
+%where $U=U(\bx)$ and $\dot x^i$ are given by~\eq{eqm_curv}. Treating $v_\parallel$ as an independent variable
+%guiding center equations become a set of four equations
+%\bea{setofgceqs}
+%B_\parallel^\ast\sqrt{g}\dot x^i = \frac{\rd x^i}{\rd \tau}
+%&=&
+%\varepsilon^{ijk}\left(
+%v_\parallel \difp{A_k}{x^j}+2U\difp{}{x^j}\frac{B_k}{\omega_c}+\frac{B_k}{\omega_c}\difp{U}{x^j}
+%\right),
+%\nonumber\\
+%B_\parallel^\ast\sqrt{g}\dot v_\parallel = \frac{\rd v_\parallel}{\rd \tau}
+%&=&
+%\varepsilon^{ijk}\difp{U}{x^i}
+%\left(
+%\difp{A_k}{x^j}+v_\parallel \difp{}{x^j}\frac{B_k}{\omega_c}
+%\right).
+%\eea
+%Here we formally introduced orbit parameter $\tau$ related to time by $\rd t = B_\parallel^\ast\sqrt{g}\rd \tau$.
+%If $\tau$ is used as an independent variable of the ODE set, time evolution is obtained in the implicit form
+%integrating the above equation for $t(\tau)$ with $B_\parallel^\ast\sqrt{g}$ being a known function of $\tau$.
+%In order to reduce this exact equation set to a linear set we notice that
+%common factor $B_\parallel^\ast\sqrt{g}$ does not influence the geometry of the orbits but only affects time evolution
+%which is not needed very accurately. 
+%Therefore this factor can be set to a constant within cell what makes implicit time dependence explicit.
+%Approximating quantities 
+%$A_k$, $B_k/\omega_c$, $\Phi$ and $\omega_c$ by linear functions~\eq{setofgceqs} becomes a set of four 
+%linear equations.
+%Note that quantities $A_k$, $B_k/\omega_c$ and $\omega_c$ are linearly interpolated independently from each other.
+%Although they are linked with each other, mutual relations contain the metric tensor, so one can assume that
+%this tensor is modified in such a way that those relations hold.
+%
+%\noindent
+%Denoting the extended set of variables with $z^i$ where $z^i=x^i$ for $i=1,2,3$ and $z^4=v_\parallel$
+%linearized equation set~\eq{setofgceqs} takes a standard form
+%\be{standeqset}
+%\frac{\rd z^i}{\rd \tau} = a^i_l z^l + b^i,
+%\ee
+%where for $i,l=1,2,3$ matrix elements are
+%\bea{amatdef}
+%a^i_l &=& \varepsilon^{ijk}\left(
+%2\difp{U}{x^l}\difp{}{x^j}\frac{B_k}{\omega_c}+\difp{U}{x^j}\difp{}{x^l}\frac{B_k}{\omega_c}
+%\right) 
+%\qquad\mbox{for}\qquad 1\le i,l \le 3,
+%\nonumber \\
+%a^i_4 &=& \varepsilon^{ijk} \difp{A_k}{x^j}
+%\qquad\mbox{for}\qquad 1\le i \le 3,
+%\nonumber \\
+%a^4_l &=& 0 
+%\qquad\mbox{for}\qquad 1\le l \le 3,
+%\nonumber \\
+%a^4_4 &=& \varepsilon^{ijk}\difp{U}{x^i}
+%\difp{}{x^j}\frac{B_k}{\omega_c},
+%\eea
+%and components of vector $b^i$ are
+%\bea{bvecdef}
+%b^i &=& \varepsilon^{ijk}\left(
+%2U_0\difp{}{x^j}\frac{B_k}{\omega_c}+\left(\frac{B_k}{\omega_c}\right)_0\difp{U}{x^j}
+%\right)
+%\qquad\mbox{for}\qquad 1\le i \le 3,
+%\nonumber \\
+%b^4 &=& \varepsilon^{ijk}\difp{U}{x^i}
+%\difp{A_k}{x^j}.
+%\eea
+%Here, quantities with zero mean the value at the origin of the coordinates,
+%\be{valorig}
+%U=U_0+x^i\difp{U}{x^i}, \qquad \frac{B_k}{\omega_c} = \left(\frac{B_k}{\omega_c}\right)_0
+%+x^i \difp{}{x^i}\frac{B_k}{\omega_c}.
+%\ee
+%
+%\subsection{Straightforward solution of the linear set}
+%
+%\noindent
+%As a first step, we transform the inhomogeneous equation set~\eq{standeqset} to a homogeneous set
+%by shifting the unknowns,
+%\be{shiftz}
+%z^i=\tilde z^i+z_s^i,
+%\ee
+%where $\tilde z^i$ are new unknowns and $z_s^i$ is constant shift which satisfies
+%\be{eqforshift}
+%a^i_l z_s^l + b^i=0.
+%\ee
+%Equation set for shifted variables is
+%\be{standeqset_hom}
+%\frac{\rd \tilde z^i}{\rd \tau} = a^i_l \tilde z^l.
+%\ee
+%Introducing the eigenvectors $\varphi^i_{k}$ of matrix $a^i_l$,
+%\be{eigvecval}
+%a^i_l \varphi^l_{\bar k}=\lambda_{\bar k} \varphi^i_{\bar k}
+%\ee
+%where $\bar k$ means that there is no summation convention over this index, and $\lambda_{\bar k}$ are corresponding 
+%eigenvalues we obtain the solution as
+%\be{obtsol}
+%\tilde z^i(\tau)=\sum_{\bar k=1}^4 \zeta^{\bar k} \varphi^i_{\bar k} {\rm e}^{\lambda_{\bar k}\tau}.
+%\ee
+%Here coefficients $\zeta^{\bar k}$ correspond to the initial value of $\tilde z^i$ and are obtained from the solution
+%of
+%\be{initval}
+%\sum_{\bar k=1}^4 \varphi^i_{\bar k} \zeta^{\bar k} = \tilde z^i(0).
+%\ee
+%Introducing the inverse matrix $\bar \varphi^{\bar k}_i$ to the matrix of eigenvectors $\varphi^i_{\bar k}$
+%such that
+%\be{invmat}
+%\bar \varphi^{\bar k}_i \varphi^i_{\bar k^\prime}=\delta^{\bar k}_{\bar k^\prime},
+%\ee
+%coefficients $\zeta^{\bar k}$ are explicitly given by
+%\be{zetabar}
+%\zeta^{\bar k} = \bar \varphi^{\bar k}_i \tilde z^i(0).
+%\ee
+%
+%\subsection{Pre-calculation and storage}
+%
+%\noindent
+%At this point we are interested in massive computation of collisionless orbits where computation speed
+%is critical. Therefore various matrices and vectors introduced in the above subsection must be computed
+%before orbit computation and stored for each cell. Computation of orbits would consist in mapping of
+%the orbit footprint from the entry face of the tetrahedron cell to some exit face which then will be the entry
+%face of the next tetrahedron cell. Namely, we would look for values of orbit parameter $\tau$ which correspond
+%to crossing of the plane containing a particular face and choose the smallest of these times. 
+%Equation of a such plane $m$ where $1\ge m \ge 4$ has the form
+%\be{planeeq}
+%x^i \alpha_i^{(m)}+\beta^{(m)}=0.
+%\ee
+%Respectively, equation to be solved for finding the intersection is of the form
+%\be{inters}
+%\sum_{\bar k=1}^4 \Omega_{\bar k}^{(m)} {\rm e}^{\lambda_{\bar k}\tau}+\rho^{(m)}=0,
+%\ee
+%where
+%\bea{Om_rho}
+%\Omega_{\bar k}^{(m)} &=& \alpha_i^{(m)} \varphi^i_{\bar k}\zeta^{\bar k}=\omega_{\bar k}^{(m)} \zeta^{\bar k},
+%\qquad \omega_{\bar k}^{(m)} = \alpha_i^{(m)} \varphi^i_{\bar k},
+%\nonumber \\
+%\rho^{(m)} &=& \beta^{(m)}+x_s^i \alpha_i^{(m)}.
+%\eea
+%Thus, besides quantities from previous subsection we need to store also $\omega_{\bar k}^{(m)}$ and $\rho^{(m)}$.
+%
+%\subsection{More detailed solution of the linear set}
+%
+%\noindent
+%For checking the general solution and later on for the approximate solution which can be used as zero order
+%approximation for the numerical solution of Eq.~\eq{inters}
+%we can solve the linear equation set in a more handy way.
+%This way also shows that two of the eigenvalues differ from each other by factor 2 what means one 
+%exponent less to compute.
+%We notice that equation for $v_\parallel$ does not depend on coordinates because within linear approximation
+%$$
+%\varepsilon^{ijk}\difp{U}{x^i}\difp{}{x^j}\frac{B_k}{\omega_c}=a,
+%\qquad
+%\varepsilon^{ijk}\difp{U}{x^i}\difp{A_k}{x^j}=b,
+%$$
+%where $a$ and $b$ are constants. This equation is then
+%$$
+%\frac{\rd v_\parallel}{\rd \tau}=a v_\parallel + b
+%$$
+%with a solution
+%$$
+%v_\parallel(\tau)=\left(v_\parallel(0)+\frac{b}{a}\right){\rm e}^{a\tau}-\frac{b}{a}.
+%$$
+%Expressing $U$ via $v_\parallel$ in the first three equations~\eq{setofgceqs} they can be presented as
+%\be{eqsforxi}
+%\frac{\rd x^i}{\rd \tau}=\tilde{a}^i_l x^l+q^i
+%\ee
+%where
+%\be{gammadef}
+%\tilde{a}^i_l=\varepsilon^{ijk}\difp{U}{x^j}\difp{}{x^l}\frac{B_k}{\omega_c}
+%\ee
+%is a constant matrix
+%and the driving term $q^i$ is a known function of $\tau$
+%\be{defqi}
+%q^i=q^i(\tau)=
+%\varepsilon^{ijk}\left(
+%v_\parallel(\tau) \difp{A_k}{x^j}+v_\parallel^2(\tau)\difp{}{x^j}\frac{B_k}{\omega_c}
+%+\left(\frac{B_k}{\omega_c}\right)_0\difp{U}{x^j}
+%\right).
+%\ee
+%Subscript ``0'' in the last term denotes the value at the coordinate origin 
+%such that 
+%$$
+%\frac{B_k}{\omega_c} = \left(\frac{B_k}{\omega_c}\right)_0+x^l\difp{}{x^l}\frac{B_k}{\omega_c}.
+%$$
+%By variable change 3D ODE set~\eq{eqsforxi} can be reduced to a 2D set if one of $x^i$ is replaced
+%by
+%\be{defy}
+%y=x^i\difp{U}{x^i}.
+%\ee
+%From definition~\eq{gammadef} one can see that
+%$$
+%\difp{U}{x^i} \tilde{a}^i_l=0.
+%$$
+%Therefore, multiplying~\eq{eqsforxi} with a constant vector $\partial U /\partial x^i$ one gets
+%\be{odefory}
+%\frac{\rd y}{\rd \tau}=\difp{U}{x^i}q^i(\tau)
+%\ee
+%which can be directly integrated. This integration however is not needed because
+%using the definition~\eq{defU} and linear representation of $U$,
+%$$
+%U=U_0+x^i\difp{U}{x^i}=U_0+y,
+%$$
+%one can express
+%$$
+%y=\frac{1}{2}v_\parallel^2(\tau)-U_0.
+%$$
+%
+%\clearpage
+%\section{Symplectic integrator}
+%\subsection{Hamiltonian mechanics in non-canonical coordinates}
+%
+%This section gives a short overview of Hamiltonian mechanics in non-canonical
+%coordinates $\zset$. These equations of motion can be equivalently
+%obtained by Euler-Lagrange equations of the phase-space Lagrangian
+%written in terms of $\zset$ (as in paper of Littlejohn), or by using
+%the Jacobian matrix of transformation from the canonical Hamiltonian
+%formalism (as in book of Balescu). Here we take the latter path. Take
+%equations of motion in canonical coordinates $\zset_{\mathrm{c}}=(\qset,\pset)=(q^{1},q^{2},\dots q^{N},p_{1},p_{2},\dots p_{N})=(z_{c}^{\,\alpha})_{\alpha=1\dots2N}$,
+%\begin{align}
+%\dot{q}^{i} & =\frac{\partial H}{\partial p_{i}},\\
+%\dot{p}_{j} & =-\frac{\partial H}{\partial q^{j}}.
+%\end{align}
+%The notation with $i$ and $j$ up and down, but greek indices $\alpha,\beta$
+%always up comes from the fact that momentum coordinates describe components
+%of covectors (index down) in velocity space, but also general phase-space
+%coordinates (index up). More compactly equations of motion can be
+%written as
+%\begin{equation}
+%\dot{z}_{\mathrm{c}}^{\,\alpha}=J^{\alpha\beta}\frac{\partial H}{\partial z_{\mathrm{c}}^{\,\beta}},
+%\end{equation}
+%where 
+%\begin{equation}
+%(J^{\alpha\beta})=\left(\begin{array}{cc}
+%0 & (\delta_{i}^{j})\\
+%(-\delta_{j}^{i}) & 0
+%\end{array}\right)
+%\end{equation}
+%is an antisymmetric matrix with positive and negative identity matrix
+%in the upper right and lower left block, respectively. Equivalently,
+%by inverting $\v J$, or just switching order and a minus sign in
+%canonical equations of motion,
+%\begin{align}
+%-\dot{p}_{j} & =\frac{\partial H}{\partial q^{j}},\\
+%\dot{q}^{i} & =\frac{\partial H}{\partial p_{i}},
+%\end{align}
+%we can write
+%\begin{equation}
+%\bar{J}_{\alpha\beta}\dot{z}_{\mathrm{c}}^{\,\alpha}=\frac{\partial H}{\partial z_{\mathrm{c}}^{\,\beta}},
+%\end{equation}
+%where
+%\begin{equation}
+%(\bar{J}_{\alpha\beta})=\left(\begin{array}{cc}
+%0 & (-\delta_{i}^{j})\\
+%(\delta_{j}^{i}) & 0
+%\end{array}\right).
+%\end{equation}
+%Now if we switch to non-canonical coordinates $\zset$ the chain rule
+%tells us that
+%\begin{align}
+%\dot{z}_{\mathrm{c}}^{\,\gamma} & =\frac{\partial z_{\mathrm{c}}^{\,\gamma}}{\partial z^{\alpha}}\dot{z}^{\alpha},\\
+%\frac{\partial H}{\partial z_{\mathrm{c}}^{\delta}} & =\frac{\partial z^{\beta}}{\partial z_{\mathrm{c}}^{\,\delta}}\frac{\partial H}{\partial z^{\beta}}.
+%\end{align}
+%Thus we can write equations of motion in terms of non-canonical coordinates
+%as
+%\begin{align}
+%\frac{\partial z_{\mathrm{c}}^{\,\gamma}}{\partial z^{\alpha}}\dot{z}^{\alpha} & =J^{\gamma\delta}\frac{\partial z^{\beta}}{\partial z_{\mathrm{c}}^{\,\delta}}\frac{\partial H}{\partial z^{\beta}}.
+%\end{align}
+%This can be treated in two ways. If we multiply by a left inverse
+%of the Jacobian matrix of the coordinate transform we obtain
+%\begin{align}
+%\dot{z}^{\alpha} & =\frac{\partial z^{\alpha}}{\partial z_{\mathrm{c}}^{\,\gamma}}J^{\gamma\delta}\frac{\partial z^{\beta}}{\partial z_{\mathrm{c}}^{\,\delta}}\frac{\partial H}{\partial z^{\beta}}.
+%\end{align}
+%This is of an uncoupled Hamiltonian form
+%\begin{equation}
+%\dot{z}^{\alpha}=\Lambda^{\alpha\beta}\frac{\partial H}{\partial z^{\beta}}
+%\end{equation}
+%with the antisymmetric \emph{Poisson matrix}
+%\begin{equation}
+%\Lambda^{\alpha\beta}\equiv\frac{\partial z^{\alpha}}{\partial z_{\mathrm{c}}^{\,\gamma}}J^{\gamma\delta}\frac{\partial z^{\beta}}{\partial z_{\mathrm{c}}^{\,\delta}}.
+%\end{equation}
+%By taking the inverse we obtain (covariant) components of the antisymmetric
+%\emph{symplectic form}
+%\begin{equation}
+%(\omega_{\alpha\beta})=(\Lambda^{\alpha\beta})^{-1}
+%\end{equation}
+%and coupled equations of motion
+%\begin{equation}
+%\omega_{\alpha\beta}\dot{z}^{\beta}=\frac{\partial H}{\partial z^{\alpha}}.
+%\end{equation}
+%In terms of tensor calculus in phase-space, the Poisson matrix $\Lambda^{\alpha\beta}$
+%represents the Poisson tensor in contravariant form, and $\omega_{\alpha\beta}$
+%represents the symplectic 2-form. Both are antisymmetric and follow
+%usual transformation properties. In the special case of canonical
+%coordinates, $\Lambda^{\alpha\beta}=J^{\alpha\beta}$ and $\omega_{\alpha\beta}=\bar{J}_{\alpha\beta}$
+%are block diagonal antisymmetric matrices. In the general non-canonical
+%case, $\Lambda^{\alpha\beta}$ and $\omega_{\alpha\beta}$ depend
+%on phase-space coordinates $\zset$, but not on time $t$.
+%
+%Geometric integrators that solve equations of motion exactly are symplectic
+%per definition (2D: Kasilov/Runov and 3D: Eder/Kasilov). For the construction
+%of numerical symplectic integrators with non-canonical quadrature,
+%certain tricks are required (Albert/Kasilov). Another alternative
+%is to keep the formulation with a (degenerate) phase-space Lagrangian
+%and use stabilized variational integrators (Kraus).
+%
+%\subsection{Geometric 3D integrator}
+%
+%A detailed description of the integrator can be found in the master's
+%thesis of Michael Eder {[}1{]} who is the main developer of the mesh-based
+%geometric orbit integration code.
+%
+%Equations of {[}1{]} can be re-written using an antisymmetric Poisson
+%matrix. Namely we have equations of motion (2.9) with
+%\begin{align}
+%\frac{\d x^{i}}{\d\tau} & =\varepsilon^{ijk}\left(z^{4}\frac{\partial A_{k}}{\partial x^{j}}+2U\frac{\partial}{\partial x^{j}}\frac{B_{k}}{\omega_{c}}+\frac{B_{k}}{\omega_{c}}\frac{\partial U}{\partial x^{j}}\right),\\
+%\frac{\d v_{\parallel}}{\d\tau} & =\varepsilon^{ijk}\frac{\partial U}{\partial x^{i}}\left(\frac{\partial A_{k}}{\partial x^{j}}+v_{\parallel}\frac{\partial}{\partial x^{j}}\frac{B_{k}}{\omega_{c}}\right).
+%\end{align}
+%The idea is to use linear interpolation of $A_{k},B_{k}/\omega_{c}$
+%and $U$ independently to obtain a linear set of equations of motion
+%in each mesh element. Covariant components $h_{k}=B_{k}/B=e/mc\,B_{k}/\omega_{c}$
+%of the normalized guiding field can be used to compute of $B_{k}/\omega_{c}$,
+%and $U=(w-J_{\perp}\omega_{c}-e\Phi)$ is computed from linear interpolations
+%of $\omega_{c}$ and $\Phi$.
+%
+%\subsubsection*{Trying to bring the system to Poisson form}
+%
+%Now the question is what to move into the Poisson matrix, and what
+%into the Hamiltonian. Since we use $U$ and $v_{\parallel}$ we have
+%some freedom to move things around. Namely in the exact system
+%\begin{align}
+%H & =\frac{mv_{\parallel}^{\,2}}{2}+J_{\perp}\omega_{c}(\xset)+e\Phi(\xset)\\
+% & =\frac{mv_{\parallel}^{\,2}}{2}+w-mU(\xset)\\
+% & =w.
+%\end{align}
+%Using the middle form we obtain the following gradient of $H$ in
+%phase-space,
+%\begin{align}
+%\frac{\partial H}{\partial x^{i}} & =-m\frac{\partial U}{\partial x^{i}},\\
+%\frac{\partial H}{\partial v_{\parallel}} & =mv_{\parallel}.
+%\end{align}
+%Now we want to get equations of motion
+%\begin{equation}
+%\dot{z}^{\alpha}=\Lambda^{\alpha\beta}\frac{\partial H}{\partial z^{\beta}}
+%\end{equation}
+%with an antisymmetric $\Lambda^{\alpha\beta}$, where $\zset=(x^{1},x^{2},x^{3},v_{\parallel})$,
+%and we use Greek indices to go from $1\dots4$ rather than $1\dots3$
+%for Latin ones. Antisymmetry of $\Lambda^{\alpha\beta}$ guarantees
+%symplecticity, i.e. conservation of the symplectic form, and thereby
+%phase-space volume (Liouville's theorem) and conservation of invariants.
+%We want to obtain equations of motion (2.8) as
+%\begin{align}
+%\dot{z}^{i}=\dot{x}^{i} & =\frac{1}{B_{\parallel}^{\star}\sqrt{g}}\varepsilon^{ijk}\left(v_{\parallel}\frac{\partial A_{k}}{\partial x^{j}}+2U\frac{\partial}{\partial x^{j}}\frac{B_{k}}{\omega_{c}}+\frac{B_{k}}{\omega_{c}}\frac{\partial U}{\partial x^{j}}\right),\label{eq:xdot}\\
+%\dot{z}^{4}=\dot{v}_{\parallel} & =\frac{1}{B_{\parallel}^{\star}\sqrt{g}}\varepsilon^{ijk}\frac{\partial U}{\partial x^{i}}\left(\frac{\partial A_{k}}{\partial x^{j}}+v_{\parallel}\frac{\partial}{\partial x^{j}}\frac{B_{k}}{\omega_{c}}\right).\label{eq:vpardot}
+%\end{align}
+%For sure we want
+%\begin{align}
+%\Lambda^{4i} & =-\frac{1}{mB_{\parallel}^{\star}\sqrt{g}}\varepsilon^{ijk}\left(\frac{\partial A_{k}}{\partial x^{j}}+v_{\parallel}\frac{\partial}{\partial x^{j}}\frac{B_{k}}{\omega_{c}}\right),\\
+%\Lambda^{44} & =0.
+%\end{align}
+%This way the equation (\ref{eq:vpardot}) in $\dot{v}_{\parallel}$
+%is fulfilled. Antisymmetry requires that
+%\begin{equation}
+%\Lambda^{i4}=-\Lambda^{4i}=+\frac{1}{mB_{\parallel}^{\star}\sqrt{g}}\varepsilon^{ijk}\left(\frac{\partial A_{k}}{\partial x^{j}}+v_{\parallel}\frac{\partial}{\partial x^{j}}\frac{B_{k}}{\omega_{c}}\right).
+%\end{equation}
+%If we choose in addition
+%\begin{equation}
+%\Lambda^{ij}=-\frac{\varepsilon^{ijk}}{mB_{\parallel}^{\star}\sqrt{g}}\frac{B_{k}}{\omega_{c}}
+%\end{equation}
+%we obtain 
+%\begin{equation}
+%\dot{x}=\Lambda^{i4}\frac{\partial H}{\partial v_{\parallel}}+\Lambda^{ij}\frac{\partial H}{\partial x^{j}}=\frac{1}{B_{\parallel}^{\star}\sqrt{g}}\varepsilon^{ijk}\left(v_{\parallel}\frac{\partial A_{k}}{\partial x^{j}}+v_{\parallel}^{\ 2}\frac{\partial}{\partial x^{j}}\frac{B_{k}}{\omega_{c}}+\frac{B_{k}}{\omega_{c}}\frac{\partial U}{\partial x^{j}}\right).
+%\end{equation}
+%Now this is the correct expression (\ref{eq:xdot}) if $v_{\parallel}^{\,2}=2U$
+%exactly during the whole procedure. This is true due to definition
+%(2.6) and the time evolution (2.7) of $v_{\parallel}$ based upon
+%this equation. Any approximation that does not fulfil (2.6) up to
+%computer accuracy will violate symplecticity.
+%
+%
+%
+%\clearpage
+\section{Analytical solution of linear equations of motion}
+\noindent
+In this section, an analytic solution to the linear equations of motion derived in section \ref{sec:linear_equations_sergei} will be deduced.\\
+By denoting the extended set of variables with $z^i$ where $z^i=x^i$ for $i=1,2,3$ and $z^4=v_\parallel$ the linearized equation set takes a standard form
+\be{standeqset}
+\frac{\rd z^i(\tau)}{\rd \tau} = a^i_l(\tau) z^l(\tau) + b^i,
+\ee
+where for $i,l=1,2,3$ the matrix elements are
+\bea{amatdef}
+a^i_l &=& \varepsilon^{ijk}\left(
+2\difp{U}{x^l}\difp{}{x^j}\frac{B_k}{\omega_c}+\difp{U}{x^j}\difp{}{x^l}\frac{B_k}{\omega_c}
+\right) 
+\qquad\mbox{for}\qquad 1\le i,l \le 3,
+\nonumber \\
+a^i_4 &=& \varepsilon^{ijk} \difp{A_k}{x^j}
+\qquad\mbox{for}\qquad 1\le i \le 3,
+\nonumber \\
+a^4_l &=& 0 
+\qquad\mbox{for}\qquad 1\le l \le 3,
+\nonumber \\
+a^4_4 &=& \varepsilon^{ijk}\difp{U}{x^i}
+\difp{}{x^j}\frac{B_k}{\omega_c},
+\eea
+and the components of vector $b^i$ are
+\bea{bvecdef}
+b^i &=& \varepsilon^{ijk}\left(
+2U_0\difp{}{x^j}\frac{B_k}{\omega_c}+\left(\frac{B_k}{\omega_c}\right)_0\difp{U}{x^j}
+\right)
+\qquad\mbox{for}\qquad 1\le i \le 3,
+\nonumber \\
+b^4 &=& \varepsilon^{ijk}\difp{U}{x^i}
+\difp{A_k}{x^j}.
+\eea
+
+\subsection{Reduction to a set of three linear ODEs}
+\noindent
+
+One can start by looking at the fourth component which is the parallel velocity as a function of time. Since this equation is decoupled from $x^i$ it can be solved independently, resulting to
+
+\noindent
+\be{defvpar}
+v_\parallel(\tau)=\left(v_\parallel(0)+\frac{b}{a}\right){\rm e}^{a\tau}-\frac{b}{a},
+\ee
+with $a$ and $b$ being
+$$
+\varepsilon^{ijk}\difp{U}{x^i}\difp{}{x^j}\frac{B_k}{\omega_c}=a,
+\qquad
+\varepsilon^{ijk}\difp{U}{x^i}\difp{A_k}{x^j}=b,
+$$
+
+which are constant within the linear fields.
+
+For further calculation this expression will be abbreviated using $\eta = (v_\parallel(0)+\frac{b}{a})$ and $\theta = (\frac{b}{a})$:
+\be{defvpar2}
+v_\parallel(\tau)=\eta{\rm e}^{a\tau}-\theta.
+\ee
+
+
+The set of differential equations can now be formulated in a way that all time dependence is confined to a driving term. In order to do this one starts with equation \ref{standeqset} and takes only the first three components into account, which yields
+
+\bea{derivation of 3d set of equations}
+ i &=& 1,2,3 \\
+\frac{\textrm{d} x^i(\tau)}{\textrm{d}\tau} &=& a^i_lx^l(\tau) + a^i_4z^4(\tau) + b^i \\
+ &=& \underbrace{\varepsilon^{ijk}\left(2 \frac{\partial U}{\partial x^l}\frac{\partial}{\partial x^j}\frac{B_k}{\omega_c} + \frac{\partial U}{\partial x^j}\frac{\partial}{\partial x^l}\frac{B_k}{\omega_c}	\right)}_{=a^i_l}x^l(\tau) + \underbrace{\varepsilon^{ijk} \left( \frac{\partial A_k}{\partial x^j} \right)}_{= a^i_4} \underbrace{z^4(\tau)}_{=v_\parallel(\tau)}  
+ \nonumber \\
+ &+& \underbrace{\varepsilon^{ijk} \left( 2U_0 \frac{\partial}{\partial x^j}\frac{B_k}{\omega_c}+\left( \frac{B_k}{\omega_c}\right)_0\frac{\partial U}{\partial x^j} \right)}_{=b^i} .
+\eea
+
+Using $U(x^i)= U_0 + x^i\frac{\partial U}{\partial x^i}$  and $U = \frac{v_\parallel ^2}{2}$ simplifies this equation to
+\be{3d explicit DE for x}
+\frac{\textrm{d} x^i(\tau)}{\textrm{d}\tau} = \underbrace{\varepsilon^{ijk}\difp{U}{x^j}\difp{}{x^l}\frac{B_k}{\omega_c}}_{=\tilde{a}^i_l}x^l(\tau)+ \underbrace{v_\parallel(\tau) \varepsilon^{ijk}\frac{\partial A_k}{\partial x^j} + v_\parallel^2(\tau)\varepsilon^{ijk}\frac{\partial}{\partial x^j}\frac{B_k}{\omega_c} + \varepsilon^{ijk} \left( \frac{B_k}{\omega_c}\right)_0 \frac{\partial U}{\partial x^j}}_{q^i(\tau)}.
+\ee
+
+This can be compactly written as
+
+\be{short 3d de for x}
+\frac{\textrm{d} x^i(\tau)}{\textrm{d}\tau} = \tilde{a}^i_l x^l(\tau) + q^i(\tau),
+\ee
+ 
+where
+\be{gammadef}
+\tilde{a}^i_l=\varepsilon^{ijk}\difp{U}{x^j}\difp{}{x^l}\frac{B_k}{\omega_c}
+\ee
+is a constant matrix
+and the driving term $q^i(\tau)$ is explicitly given as 
+\be{defqi}
+q^i(\tau)=
+\varepsilon^{ijk}\left(
+v_\parallel(\tau)  \difp{A_k}{x^j}  +v_\parallel^2(\tau)\difp{}{x^j}\frac{B_k}{\omega_c}
++\left(\frac{B_k}{\omega_c}\right)_0\difp{U}{x^j}
+\right).
+\ee
+For compactness, this will be abbreviated as
+\bea{defqi2}
+q^i(\tau)&=&v_\parallel(\tau) \underbrace{\varepsilon^{ijk} \left( \difp{A_k}{x^j}\right)}_{\alpha^i}  
++v_\parallel^2(\tau)   \underbrace{ \varepsilon^{ijk}       \difp{}{x^j}\frac{B_k}{\omega_c}}_{\beta^i} 
++ \underbrace{\varepsilon^{ijk} \left( \frac{B_k}{\omega_c}\right)_0\difp{U}{x^j}}_{\gamma^i} \\
+&=&v_\parallel(\tau){\alpha^i}+v_\parallel^2(\tau) {\beta^i}+{\gamma^i}.
+\eea
+The terms $\alpha^i$, $\beta^i$ and $\gamma^i$ are constant within the linearized field, all time dependence comes therefore from $v_\parallel(\tau)$.
+
+
+\subsection{Solution of Homogeneous Equation of Motion}
+\noindent
+The next step of calculating the analytical solution to the homogeneous part of equation \ref{short 3d de for x} is to start with the following Ansatz:
+\be{Ansatzeq}
+\vec{x} = e^{\lambda\tau}\vec{\psi}
+\ee
+Using this, equation \ref{standeqset} yields the eigenvalue equation
+\be{Ansatzeq2}
+\lambda e^{\lambda \tau}\vec{\psi} = \hat{a} e^{\lambda\tau}\vec{\psi}.
+\ee
+In this context $\lambda$ denotes the eigenvalues and $\vec{\psi}$ the eigenvectors of $\hat{a}$.
+Therefore, the general solution to the homogeneous differential equation can be written as:
+\be{eq:homogeneousSolution1}
+\vec{x}_{(h)}(\tau) = C_1e^{\lambda_1\tau}\vec{\psi_1} + C_2e^{\lambda_2\tau}\vec{\psi_2} + C_3e^{\lambda_3\tau}\vec{\psi_3}
+\ee
+Here, the $C_l$ denote a vector of arbitrary constants given by initial conditions of the problem.\\
+Equation \ref{eq:homogeneousSolution1} can be written by using index notation
+\be{}
+x^i_{(h)}(\tau) = \psi^i_l C^l e^{\lambda^l \tau},
+\ee
+where $\psi^i_l$ is a matrix with the eigenvectors $\vec{\psi}_l$ in the columns corresponding to the respective eigenvalues $\lambda^l$.
+
+\subsection{Particular Solution: Variation of Constants}
+\noindent
+Next, the particular solution to the inhomogeneous differential equation \ref{standeqset} will be derived. In order to do this, the method of Variation of Constants is applied. With this approach, the coefficients $\widetilde{C}_l$ are treated as functions of $\tau$
+\be{homogeneousSolution2}
+\vec{x}_{(p)}(\tau) = \widetilde{C}_1(\tau)e^{\lambda_1\tau}\vec{c_1} + \widetilde{C}_2(\tau)e^{\lambda_2\tau}\vec{c_2} + \widetilde{C}_3(\tau)e^{\lambda_3\tau}\vec{c_3},
+\ee
+and can also be denoted in index notation
+\be{}
+x^i_{(p)}(\tau) = \psi^i_l \widetilde{C}^l(\tau) e^{\lambda^l \tau}.
+\ee
+Calculating the derivative of this equation yields
+\be{Variation of Constants}
+\frac{\mathrm{d}\vec{x}} {\mathrm{d}\tau} = {\widetilde{C}_1}^\prime(\tau)e^{\lambda_1\tau}\vec{\psi_1}+ \widetilde{C}_1(\tau)\lambda_1e^{\lambda_1\tau}\vec{\psi_1} + {\widetilde{C}_2}^\prime(\tau)e^{\lambda_2\tau}\vec{\psi_2} +\widetilde{C}_2(\tau)\lambda_2e^{\lambda_2\tau}\vec{\psi_2} + {\widetilde{C}_3}^\prime(\tau)e^{\lambda_3\tau}\vec{\psi_3}+ \widetilde{C}_3(\tau)\lambda_3e^{\lambda_3\tau}\vec{\psi_3}
+\ee
+Inserting this expression into equation \ref{eqsforxi} leads to
+\be{VoC2}
+ \vec{q}(\tau)  = {\widetilde{C}_1}^\prime(\tau)e^{\lambda_1\tau}\vec{\psi_1} + {\widetilde{C}_2}^\prime(\tau)e^{\lambda_2\tau}\vec{\psi_2}  + {\widetilde{C}_3}^\prime(\tau)e^{\lambda_3\tau}\vec{\psi_3},
+\ee
+which can be denoted again in index notation
+\be{}
+q^i(\tau) = \psi^i_l {\widetilde{C}}^{'l}(\tau) e^{\lambda^l \tau}.
+\ee
+The next step in calculating the coefficients ${\widetilde{C}}^{l}(\tau)$ is to multiply the eigenvectors $\psi^i_l$ with the inverse matrix $\bar{\psi}^j_i$, where $\bar{\psi}^j_i \psi^i_l = \delta^j_l$
+\be{}
+\bar{\psi}^j_i q^i(\tau) =  \underbrace{\bar{\psi}^j_i \psi^i_l}_{ \delta^j_l} {\widetilde{C}}^{'l}(\tau) e^{\lambda^l \tau}.
+\ee
+\be{C_i-prime}
+\widetilde{C}^{'l}(\tau) =   \bar{\psi}^l_i q^i(\tau) e^{-\lambda^l \tau}
+\ee
+One can now integrate this expression from $0$ to $\tau$ since the initial conditions will be given for $\tau = 0$:
+\be{C_i}
+\widetilde{C}^{l}(\tau) = \int_0^\tau \bar{\psi}^l_i q^i(\tau^\prime) e^{-\lambda^l \tau^\prime} \mathrm{d}\tau^\prime\\
+\ee
+By inserting this into equation \ref{homogeneousSolution2}, the particular solution to the inhomogeneous differential equation \ref{standeqset} is obtained:
+\be{x_part_pre_integral}
+x^i_{(p)}(\tau) = \psi^i_l e^{\lambda^l \tau} \int_0^\tau \bar{\psi}^l_k q^k(\tau^\prime) e^{-\lambda^l \tau^\prime} \mathrm{d}\tau^\prime
+\ee
+The general solution to this equation is the superposition of the homogeneous solution with a particular solution, which in this case can be written as
+\be{x_total}
+x_{g}^i(\tau) =\psi^i_l e^{\lambda^l \tau} \left(C^l + \int_0^\tau \bar{\psi}^l_k q^k(\tau^\prime) e^{-\lambda^l \tau^\prime} \mathrm{d}\tau^\prime \right)
+\ee
+Next, one can derive an integratable expression for $q^k$. This can be achieved by inserting equation \ref{defvpar2} into equation \ref{defqi2}
+\be{qi_short1}
+q^k(\tau) = \left( e^{a\tau}\eta -\theta\right)\alpha^k + \left( e^{a\tau}\eta -\theta \right)^2 \beta^k+\gamma^k.
+\ee
+This expression can be re-written collecting powers of $e^{a\tau}$, it is also convenient to abbreviate this further as
+\be{qi_short2}
+q^k(\tau) =  e^{a\tau}(\underbrace{\eta \alpha^k - 2 \eta \theta \beta^k}_{D^k}) + e^{2a\tau} (\underbrace{\eta^2 \beta^k}_{F^k}) + (\underbrace{\theta^2 \beta^k-\theta \alpha^k + \gamma^k}_{E^k}),
+\ee
+which leads to
+\be{qi_veryshort}
+q^k(\tau) = e^{a\tau}D^k + e^{2a\tau}F^k + E^k.
+\ee
+Now, one can put this expression into equation \ref{x_total} and thereby obtains
+\be{qi_into_xtot}
+x^i(\tau) = \psi^i_l e^{\lambda^l \tau} \left( C^l  + \int_0^\tau \left( e^{(a-\lambda^l)\tau^\prime}\bar{\psi}^l_k D^k + e^{(2a-\lambda^l)\tau^\prime} \bar{\psi}^l_k F^k + e^{-\lambda^l\tau^\prime}\bar{\psi}^l_k E^k   \right)d\tau^\prime \right).
+\ee
+The individual integrals over $\tau^\prime$ yield
+\bea{integrals_dtau-prime}
+\int_{0}^{\tau} e^{(a-\lambda^l)\tau^\prime}d\tau^\prime = \frac{1}{a-\lambda^l} (e^{(a-\lambda^l)\tau}-1)\\
+\int_{0}^{\tau} e^{(2a-\lambda^l)\tau^\prime}d\tau^\prime = \frac{1}{2a-\lambda^l} (e^{(2a-\lambda^l)\tau}-1)\\
+\int_{0}^{\tau} e^{-\lambda^l\tau^\prime}d\tau^\prime = -\frac{1}{\lambda^l} (e^{-\lambda^l\tau}-1)
+\eea
+Using these results, equation \ref{qi_into_xtot} can be re-written as:
+\be{x_total2}
+x^i(\tau) =   \psi^i_l  \left(C^l e^{\lambda^l \tau} + \frac{\bar{\psi}^l_k D^k}{a-\lambda^l}(e^{a\tau}-e^{\lambda^l\tau}) + \frac{\bar{\psi}^l_k F^k}{2a-\lambda^l}(e^{2a\tau}-e^{\lambda^l\tau})  - \frac{\bar{\psi}^l_k E^k}{\lambda^l}(1-e^{\lambda^l\tau}) \right)
+\ee 
+Next, the value of $C^l$ need to be determined for given initial conditions
+\be{initial_conditions}
+x^i(\tau=0) = x^i_{(0)}.
+\ee
+Setting $\tau = 0$ in equation \ref{x_total2} yields
+\be{x0=cjx0}
+x^i_{(0)} =  \psi^i_l  C^l + 0 + 0 + -0  = \psi^i_l  C^l .
+\ee 
+By multiplying with the inverse matrix $\bar{\psi}^l_i$, the coefficients are given by
+\be{C_k1}
+C^l = \bar{\psi}^l_i x^i_{(0)} .
+\ee
+Therefore, formula \ref{x_total2} can be re-written as
+\be{x_total3}
+x^i(\tau) =   \psi^i_l  \left(\bar{\psi}^l_i x^i_{(0)}e^{\lambda^l \tau} + \frac{\bar{\psi}^l_k D^k}{a-\lambda^l}(e^{a\tau}-e^{\lambda^l\tau}) + \frac{\bar{\psi}^l_k F^k}{2a-\lambda^l}(e^{2a\tau}-e^{\lambda^l\tau})  - \frac{\bar{\psi}^l_k E^k}{\lambda^l}(1-e^{\lambda^l\tau}) \right),
+\ee 
+
+with $D^k$, $E^k$ and $F^k$ being constant within the linearized field.
+
+
+\subsection{Axisymmetric case}
+
+In the previous sections the analytical solution for the particle coordinates as functions of time was derived. In the derivation the eigenvalues $\lambda^l$ and eigenvectors $\psi^i_l$ of the (3x3) matrix $a^i_l$ played an essential role in calculating the coordinates $x^i(\tau)$. From the form of the elements of $a^i_l$ one can deduce that for a general non-axisymmetric systemone one eigenvalue will always be equal to $0$. This is not problematic as long as the eigenvalue corresponds to a non-trivial eigenvector, which is the case. If one is interested in calculating the analytical solution for the coordinates in an axisymmetric (symmetric in $\varphi$) configuration, the additional symmetry will reduce the problem to a two-dimensional system and furthermore not allow to use the same derivation shown in the previous section. This occurs since the matrix $a^i_l$ then has two zero-valued eigenvalues which no longer have two linearly independent eigenvectors. In the derivation above the inverse of the matrix containing the eigenvectors $\psi^i_l$ was needed but since this matrix becomes singular when the eigenvectors are no longer linearly independent, a new approach is needed. In the upcoming sub-sections an analog solution for the axisymmetric case will be derived.
+
+\subsection{Axisymmetric homogeneous solution} 
+ This section presents the derivation of the analytical solution to the homogeneous part of equation \ref{standeqset} for the toroidally axisymmetric case. Here, all derivatives with respect to $\varphi$ are $0$ and it is furthermore assumed that no electric field is present. The matrix $a^i_l$ can then be written in the following notation omitting all zero-valued elements and introducing the abbreviations $d_{ij}=\frac{\partial h_i}{\partial x^j}$ and $u_i = \frac{\partial U}{\partial x^i}$:
+\[
+a^i_l= \frac{cm}{e}
+\begin{pmatrix}
+-d_{21}u_3 & 0 & -d_{23}u_3  \\
+d_{31}u_1+d_{11}u_3 & 0 &-d_{33}u_1+d_{13}u_3  \\
+d_{21}u_1& 0 &d_{23}u_1 
+\end{pmatrix}
+\]
+
+Due to the linearization of the fields, the values for $d_{ij}$ and $u_i$ remain constant withing a given tetrahedron.
+From the form of matrix $a^i_l$ can be deduced that the values for $\frac{\textrm{d}x_2}{\textrm{d}\tau}$ do not depend on $x_2$, the system of differential equations therefore reduces to a two-dimensional system, where the $x_2$-component can be calculated independently from the solutions for $x_1$ and $x_2$. The two-dimensional system of equations for the $x_1$ and $x_3$ component can be formulated using a reduced matrix 
+
+\[
+\tilde{a}^i_l= \frac{cm}{e}
+\begin{pmatrix}
+-d_{21}u_3 & - d_{23}u_3  \\
+d_{21}u_1&d_{23}u_1 
+\end{pmatrix}
+\]
+
+such that
+
+\bea{eq:2d_system_explicit}
+\begin{pmatrix}	\dot{x_1}(\tau)\\ \dot{x_3}(\tau)\end{pmatrix} = \frac{cm}{e} \begin{pmatrix}-d_{21}u_3 & -d_{23}u_3 \\d_{21}u_1&d_{23}u_1 \end{pmatrix} \cdot \begin{pmatrix}	x_1(\tau)\\ x_3(\tau)\end{pmatrix} + \begin{pmatrix} q_1(\tau)\\q_3(\tau) \end{pmatrix}.
+\eea
+In this reduced system of equations, the Ansatz 
+
+\be{Ansatzeq21}
+\vec{x} = e^{\lambda\tau}\vec{\psi}
+\ee
+
+will be used in order to construct the homogeneous solution, where $\lambda$ denotes the eigenvalues of $\tilde{a}^i_l$ and $\vec{\psi}$ the corresponding eigenvector. 
+
+Using this, the homogeneous part of equation \ref{standeqset} yields the eigenvalue equation
+
+\be{Ansatzeq22}
+\lambda e^{\lambda \tau}\vec{\psi} = \hat{a} e^{\lambda\tau}\vec{\psi}
+\ee
+
+
+
+The general solution to the homogeneous differential equation can then be written as
+
+\be{eq:homogeneousSolution1}
+x_{(h)}^i(\tau) = C_1e^{\lambda_1\tau}\psi^i_1 + C_2e^{\lambda_2\tau}\psi^i_2.
+\ee
+
+Explicit calculation of the eigenvalues and corresponding eigenvectors of $a^i_l$ yields
+
+\bea{eq:Eig(a^i_l)}
+\lambda_{1} &=& 0\\
+\lambda_{2} &=& \lambda = \frac{cm}{e}\left( d_{23}u_1 - d_{21}u_3 \right) \\
+\psi^i_1 &=& \begin{pmatrix}
+	\frac{-d_{23}}{d_{21}}\\
+	1
+\end{pmatrix}\\
+\psi^i_2 &=& \begin{pmatrix}
+	\frac{-u_{3}}{u_{1}}\\
+	1
+\end{pmatrix}
+\eea
+
+and the general solution to the homogeneous system therefore becomes
+
+\be{eq:homogeneousSolution2}
+x_{(h)}^i(\tau) = C_1\begin{pmatrix}\frac{-d_{23}}{d_{21}}\\1\end{pmatrix} + C_2e^{\frac{cm}{e}\left( d_{23}u_1 - d_{21}u_3 \right)\tau}\begin{pmatrix}\frac{-u_{3}}{u_{1}}\\1\end{pmatrix}
+\ee
+
+
+with the $C_i$ denoting arbitrary constants given by initial conditions of the problem. The eigenvectors furthermore need not be normalized since any normalization constant could be pulled into the $C_i$.
+
+\subsection{Axisymmetric Particular Solution: Variation of Constants}
+
+Now that the solution to the homogeneous part has been found, one is interested in a particular solution to the inhomogeneous differential equation \ref{standeqset} to construct the general solution. In order to do this, one can once more apply the method of Variation of Constants where coefficients $C_i$ of the homogeneous solution are treated as functions of $\tau$:
+\be{eq:homogeneousSolution3}
+x_{(p)}^i(\tau) = C_1(\tau)\psi^i_1 + C_2(\tau)e^{\lambda\tau}\psi^i_2
+\ee
+
+Calculating the derivative of this equation yields:
+\be{Variation of Constants}
+\dv{x_{(p)}^i}{\tau} = {C_1}^\prime(\tau) \psi^i_1 + {C_2}^\prime(\tau)e^{\lambda\tau}\psi^i_2 +C_2(\tau)\lambda e^{\lambda\tau}\psi^i_2
+\ee
+
+Inserting this expression into equation \ref{eq:2d_system_explicit} results to
+
+\be{VoC2}
+q^i(\tau)  = {C_1}^\prime(\tau)\psi^i_1 + {C_2}^\prime(\tau)e^{\lambda\tau}\psi^i_2.
+\ee
+
+It is convenient to write this expression as a matrix vector product, explicitly given as
+
+\be{eq:matrix product for q}
+\begin{pmatrix} q^1(\tau) \\ q^3(\tau) \end{pmatrix} = \underbrace{\begin{bmatrix} \psi^i_1,e^{\lambda \tau}\psi^i_2 \end{bmatrix}}_{M} \cdot 
+\begin{pmatrix} {C_1}^\prime (\tau)  \\{C_2}^\prime (\tau) \end{pmatrix} = \begin{pmatrix}
+	\frac{-d_{23}}{d_{21}} & \frac{-u_3}{u_1}e^{\lambda\tau} \\ 1 & e^{\lambda\tau}
+\end{pmatrix}\cdot 
+\begin{pmatrix} {C_1}^\prime (\tau)  \\{C_2}^\prime (\tau) \end{pmatrix}.
+\ee
+
+By inverting $M$ and multiplying by this inverse matrix from the left one obtains the explicit expression
+
+\be{eq:explicit expression for Ci}
+\begin{pmatrix} {C_1}^\prime (\tau)  \\{C_2}^\prime (\tau) \end{pmatrix}  = 
+M^{-1} \cdot \begin{pmatrix} q^1(\tau) \\ q^3(\tau) \end{pmatrix} = \frac{cm}{e\lambda}\begin{pmatrix}
+	-d_{21}u_1 & -d_{21}u_3 \\ d_{21}u1e^{-\lambda\tau} & d_{23}u_1e^{-\lambda \tau}
+\end{pmatrix} \cdot \begin{pmatrix} q^1(\tau) \\ q^3(\tau) \end{pmatrix}
+\ee
+
+for ${C_i}^\prime(\tau)$.
+
+One can now formally replace $\tau$ by $\tau^\prime$ integrate this expression from $0$ to $\tau$ since the initial conditions will be given for $\tau = 0$:
+\be{C_i}
+\begin{pmatrix}	C_1(\tau) \\ C_2(\tau)\end{pmatrix}  =  \frac{cm}{e\lambda} \int_0^\tau d\tau^\prime \begin{pmatrix}
+	-d_{21}u_1 & -d_{21}u_3 \\ d_{21}u_1e^{-\lambda\tau^\prime} & d_{23}u_1e^{-\lambda \tau^\prime}
+\end{pmatrix} \cdot \begin{pmatrix} q^1(\tau^\prime) \\ q^3(\tau^\prime) \end{pmatrix}\\
+\ee
+
+Next, one can continue by using the explicit expression for $q^i$, given in equation \ref{qi_veryshort}. Using the fact that $a = -\lambda$ simplifies this result to
+\be{}
+q^k(\tau) = e^{-\lambda\tau}D^k + e^{-2\lambda\tau}F^k + E^k
+\ee
+
+where each vectorial quantity consists only of the $x_1$ and $x_3$ components.
+
+The results for $C_i(\tau)$ can then be evalutated to
+
+\bea{Explicit C evaluation}
+C_1(\tau) &=& \frac{cm}{e}d_{21}u_k\left[ \frac{e^{-2\lambda\tau}-1}{2\lambda^2} F^k + \frac{e^{-\lambda\tau}-1}{\lambda^2}D^k -\frac{\tau}{\lambda}E^k\right]\\
+C_2(\tau) &=& \frac{cm}{e}u_1 d_{2k} \left[ \frac{1-e^{-3\lambda\tau}}{3\lambda^2} F^k + \frac{1-e^{-2\lambda\tau}}{2\lambda^2} D^k  + \frac{1-e^{-\lambda\tau}}{\lambda^2}E^k\right]\eea
+
+with $u_k$ and $d_{2k}$ being
+\bea{}
+ u_k = \begin{pmatrix} u_1 \\ u_3 \end{pmatrix},& & d_{2k} = \begin{pmatrix} d_{21}\\ d_{23} \end{pmatrix}.
+\eea
+
+These expressions for $C_i(\tau)$ can now be put into equation \ref{eq:homogeneousSolution3} to calculate the particular solution. Superposition of particular and homogeneous solution constructs the general solution to the set of differential equations.
+
+\bea{GeneralAxisymmetricSolution1}
+x^i_{(g)}(\tau)= x^i_{(h)}+ x^i_{(p)} = (\tilde{C}_1 + C_1(\tau) ) \psi^i_1 + (\tilde{C}_2 + C_2(\tau)) e^{\lambda\tau}\psi^i_2
+\eea
+
+Since the $C_i(\tau)$ were integrated from $\tau^\prime = 0$ to $\tau\prime = \tau$ they vanish for $\tau = 0$, while initial conditions require that \be{}
+x^i_{(g)}(\tau = 0) =  x^i_{(0)} = \tilde{C}_1 \psi^i_1 + \tilde{C}_2\psi^i_2 \hspace{0.1 cm}.
+\ee
+
+
+Explicitly, this gives two equations for $\tilde{C}_i$, namely
+\bea{}
+x^1_{(0)} &=& -\frac{d_{23}}{d_{21}}\tilde{C}_1-\frac{u_3}{u_1} \tilde{C}_2 \text{,}\\
+x^3_{(0)} &=& \tilde{C}_1+\tilde{C}_2 \text{.}
+\eea
+Using $\frac{cm}{e}\lambda = (d_{23}u_1-d_{21}u_3)$, the $\tilde{C}_i$ are therefore
+\bea{}
+\tilde{C}_1 &=& -\frac{cm}{e}d_{21} \frac{u_ix^i_{(0)}}{\lambda} \text{ , }\\
+\tilde{C}_2 &=& \frac{cm}{e}u_1 \frac{d_{2i}x^i_{(0)}}{\lambda} \hspace{0.1 cm}\text{. }
+\eea
+
+Inserting this into equation \ref{GeneralAxisymmetricSolution1} yields the analytical result for the coordinates $x^1, x^3$:
+\bea{AxisymmetricAnalyticalExpressionX}
+x^1(\tau) &=& \frac{cm}{e\lambda}\bigg[ x^k_{(0)}\left(d_{23}u_k-u_3d_{2k}e^{\lambda\tau} \right) \nonumber \\
+&-& d_{23}u_k \left( \frac{e^{-2\lambda\tau}-1}{2\lambda}F^k + \frac{e^{-\lambda\tau}-1}{\lambda}D^k - \tau E^k \right) \nonumber \\
+&-&  u_3d_{2k}\left( \frac{e^{\lambda\tau}-e^{-2\lambda\tau}}{3\lambda}F^k + \frac{e^{\lambda\tau}-e^{-\lambda\tau}}{2\lambda}D^k+\frac{e^{\lambda\tau}-1}{\lambda}E^k\right)\bigg] \\
+x^3(\tau) &=& \frac{cm}{e\lambda}\bigg[ x^k_{(0)}\left(-d_{21}u_k+u_1d_{2k}e^{\lambda\tau} \right) \nonumber\\
+&+& d_{21}u_k \left( \frac{e^{-2\lambda\tau}-1}{2\lambda}F^k + \frac{e^{-\lambda\tau}-1}{\lambda}D^k - \tau E^k \right) \nonumber\\
+&+& u_1d_{2k}\left( \frac{e^{\lambda\tau}-e^{-2\lambda\tau}}{3\lambda}F^k + \frac{e^{\lambda\tau}-e^{-\lambda\tau}}{2\lambda}D^k+\frac{e^{\lambda\tau}-1}{\lambda}E^k\right)\bigg] \eea
+
+Now that $x^1$ and $x^3$ have been found, $x^2$ can be calculated via the second component of the differential equation set using these newly found solutions.
+The second component of the differential equation can be written as
+
+\be{}
+\dot{x}^2(\tau) =  a_{21}x^1(\tau) + a_{23}x^3(\tau) + q^2(\tau) \hspace{0.1 cm},
+\ee
+
+which is explicitly given as
+
+\be{}
+\dot{x}^2(\tau) = \frac{cm}{e} \left(d_{31}u_1+d_{11}u_3 \right)x^1(\tau) + \frac{cm}{e}\left(-d_{33}u1 + d_{13}u_3 \right)x^3(\tau) + e^{-\lambda\tau}D^2 + e^{-2\lambda\tau}F^2 + E^2 \hspace{0.1 cm}.
+\ee
+
+Formally replacing $\tau$ by $\tau^\prime$ and subsequent integration over $\tau^\prime$ from $0$ to $\tau$ yields the result for $x^2(\tau)$. Since this equation depends only on $\dot{x}^2(\tau)$ and not on $x^2(\tau)$, an arbitrary constant $C$ can be added to $x^2(\tau)$ which will be determined by initial conditions. Since the integral over $\tau^\prime$ starts at $0$, this constant will be given by $C = x^2_{(0)}$.
+
+For clarity, one can define that
+\bea{x2-AxisymmetricAnalyticalSolution}
+\textrm{X}^1(\tau) &=& \int_{0}^{\tau} x^1(\tau^\prime)d\tau^\prime \\
+&=& \frac{cm}{e\lambda}\bigg[ x^k_{(0)}\left(d_{23}u_k\tau-u_3d_{2k}\frac{e^{\lambda\tau}-1}{\lambda} \right) \nonumber\\
+&-& d_{23}u_k \left( \frac{e^{-2\lambda\tau}+2\lambda\tau-1}{4\lambda^2}F^k - \frac{e^{-\lambda\tau}+\lambda\tau-1}{\lambda^2}D^k - \frac{\tau^2}{2} E^k \right) \nonumber\\
+&-&  u_3d_{2k}\left( \frac{2e^{\lambda\tau}+e^{-2\lambda\tau}-3}{6\lambda^2}F^k + \frac{e^{\lambda\tau}+e^{-\lambda\tau}-2}{2\lambda^2}D^k+\frac{e^{\lambda\tau}-\lambda\tau-1}{\lambda^2}E^k\right)\bigg],\nonumber\\
+\textrm{X}^3(\tau) &=& \int_{0}^{\tau} x^3(\tau^\prime)d\tau^\prime \\
+&=& \frac{cm}{e\lambda}\bigg[ x^k_{(0)}\left(-d_{21}u_k\tau+u_1d_{2k}\frac{e^{\lambda\tau}-1}{\lambda} \right) \nonumber\\
+&+& d_{21}u_k \left( \frac{e^{-2\lambda\tau}+2\lambda\tau-1}{4\lambda^2}F^k - \frac{e^{-\lambda\tau}+\lambda\tau-1}{\lambda^2}D^k - \frac{\tau^2}{2} E^k \right) \nonumber\\
+&+&  u_1d_{2k}\left( \frac{2e^{\lambda\tau}+e^{-2\lambda\tau}-3}{6\lambda^2}F^k + \frac{e^{\lambda\tau}+e^{-\lambda\tau}-2}{2\lambda^2}D^k+\frac{e^{\lambda\tau}-\lambda\tau-1}{\lambda^2}E^k\right)\bigg],\nonumber\\
+\textrm{Q}^2(\tau) &=& \int_{0}^{\tau} q^2(\tau^\prime)d\tau^\prime \\
+&=& \frac{1-e^{-\lambda\tau}}{\lambda}D^2 + \frac{1-e^{-\lambda\tau}}{2\lambda}F^2 + \tau E^2 \nonumber\hspace{0.1 cm}.
+\eea
+
+The solution for $x^2(\tau)$ can then be compactly written as
+
+\be{}
+x^2(\tau) = \frac{cm}{e} \left(d_{31}u_1+d_{11}u_3 \right)\textrm{X}^1(\tau) + \frac{cm}{e}\left(-d_{33}u_1 + d_{13}u_3 \right)\textrm{X}^3(\tau) + \textrm{Q}^2(\tau)\hspace{0.1 cm}.
+\ee
+
+
+
+
+
+\clearpage
+\section{Integration of equations of motion with Runge-Kutta method of $4^{\text{th}}$-order}
+
+\subsection{Derivation of the RK4-Error for the geometric integrator}
+\noindent
+Our set of 4 linear differential equations for 4 unknowns $z^i$ is
+\be{}
+\frac{\rd z^i}{\rd \tau} = a^i_l z^l + b^i,
+\ee
+where $a^i_l$ is constant 4$\times$4 matrix and $b^i$ is constant 4D vector.
+It is convenient to use here vector notation for unknowns $\bz$, for matrix $\hat \ba$ and for r.h.s. vector $\bb$
+and to denote tensor convolutions with $\cdot$
+\be{matrnot}
+\frac{\rd \bz}{\rd \tau} = \hat \ba \cdot \bz +\bb.
+\ee
+We denote starting value of $\bz$ for $\tau=0$ with $\bz_0$, $\bz(0)=\bz_0$  and look for the solution at time moment $\tau$
+in the form of time series
+\be{timser}
+\bz=\bz_0 + \tau \bz_1 + \tau^2 \bz_2 + ... = \sum\limits_{k=0}^\infty \tau^k \bz_k,
+\ee
+where $\bz_k$ are constant vectors.
+Substituting this in~\eq{matrnot} we get
+\be{get}
+\sum\limits_{k=0}^\infty (k+1)\tau^k \bz_{k+1} = \bb + \sum\limits_{k=0}^\infty \tau^k \hat\ba\cdot\bz_k.
+\ee
+Equating independently different powers of $\tau$ we get an infinite chain
+\bea{chain}
+\bz_1 &=& \bb + \hat\ba\cdot\bz_0,
+\nonumber \\
+2\bz_2 &=& \hat\ba\cdot\bz_1,
+\nonumber \\
+3\bz_3 &=& \hat\ba\cdot\bz_2,
+\nonumber \\
+\dots,
+\nonumber \\
+k\bz_k &=& \hat\ba\cdot\bz_{k-1},
+\nonumber \\
+\dots
+\eea
+which can be solved as follows
+$$
+\bz_k = \frac{1}{k!}\hat \ba^{k-1}\cdot\bz_1,
+$$
+where $\hat \ba^n$ denotes product of n-matrices $\hat \ba$. Thus, explicitly series~\eq{timser} is
+\be{explser}
+\bz=\bz_0 + \sum\limits_{k=1}^\infty \frac{\tau^k}{k!} \left(\hat \ba^{k-1}\cdot\bb + \hat \ba^k\cdot \bz_0\right).
+\ee
+This series converges for any matrix $\hat \ba$ and for any value of $\tau$ because of the factorial in denominator.
+
+\noindent
+Let us introduce a more general notation for autonomous sets of equations
+\be{autonom}
+\frac{\rd \bz}{\rd \tau} = \bbf(\bz),
+\ee
+where $\bbf(\bz)$ is generally a nonlinear vector function of $\bz$, and ``autonomous'' means that $\bbf$ does not depend on time 
+explicitly. In our case of a linear set~\eq{matrnot} this function is
+\be{fdef}
+\bbf(\bz) = \bb + \hat \ba \cdot\bz.
+\ee
+Denoting now with $\bz_{RK4}$ a result of a single 4-th order Runge Kutta step from 0 to $\tau$ with initial value $\bz_0$, 
+explicitly this result is
+\bea{RK4}
+\bz_{RK4} &=& \bz_0 + \frac{\tau}{6}\bbf(\bz_0)+\frac{\tau}{3}\bbf\left(\bz_0 + \frac{\tau}{2}\bbf(\bz_0)\right)
++\frac{\tau}{3}\bbf\left(\bz_0 + \frac{\tau}{2}\bbf\left(\bz_0 + \frac{\tau}{2}\bbf(\bz_0)\right)\right)
+\nonumber \\
+&+&
+\frac{\tau}{6}\bbf\left(\bz_0 + h \bbf\left(\bz_0 + \frac{\tau}{2}\bbf\left(\bz_0 + \frac{\tau}{2}\bbf(\bz_0)\right)\right)\right).
+\eea
+Denoting now $\bbf_0=\bbf(\bz_0)$ we get in accordance with~\eq{fdef}
+\be{f0not}
+\bbf(\bz_0 + \delta \bz) = \bbf_0 + \hat\ba\cdot \delta \bz.
+\ee
+Using this formula in~\eq{RK4} we can make all substitutions and get
+\be{RK4lin}
+\bz_{RK4} = \bz_0 + \tau \bbf_0 + \frac{\tau^2}{2}\hat\ba\cdot\bbf_0 + \frac{\tau^3}{6}\hat\ba\cdot\hat\ba\cdot\bbf_0 
++\frac{\tau^4}{24}\hat\ba\cdot\hat\ba\cdot\hat\ba\cdot\bbf_0
+= \bz_0 + \sum_{k=1}^4 \frac{\tau^k}{k!}\hat\ba^{k-1}\cdot\bbf_0
+\ee
+Using the same notation for $\bbf_0 = \bb + \hat \ba \cdot\bz_0 $ in the exact solution~\eq{explser} we can present this solution
+in the form
+\be{explser_renot}
+\bz=\bz_0 + \sum\limits_{k=1}^\infty \frac{\tau^k}{k!}\ba^{k-1}\cdot \bbf_0.
+\ee
+Thus, 4-th order Runge Kutta solution~\eq{RK4lin} differs from the exact solution~\eq{explser_renot} by the terms
+of the order $\tau^5 \ba^4$ and higher. Therefore, our solution to the truncated set ignoring the FLR effects, which has parabolic
+dependence on time, is described by the Runge Kutta solution solution exactly (its exact series~\eq{explser_renot} has only three first
+terms which are also fully included in~\eq{RK4lin}).
+
+\subsection{Taylor series expansion of analytical solution}
+The analytical solution can be written as
+\be{}
+x^i(\tau) =   \psi^i_l\bar{\psi}^l_k  \left( x^k_{(0)}e^{\lambda^l \tau} + \frac{ D^k}{a-\lambda^l}(e^{a\tau}-e^{\lambda^l\tau}) + \frac{ F^k}{2a-\lambda^l}(e^{2a\tau}-e^{\lambda^l\tau})  + \frac{E^k}{\lambda^l}(e^{\lambda^l\tau}-1) \right),
+\ee
+whereas the Runge-Kutta method of $4^{\text{th}}$-order computes the solution exactly up to the $4^{\text{th}}$-order of a Taylor series expansion:
+\be{taylor_x-RK}
+\begin{split}
+x^i_{\text{RK4}} =  &\psi^i_l\bar{\psi}^l_k \bigg[\bigg. x^k_{(0)} + \tau\left( \lambda^l x^k_{(0)} + D^k + F^k + E^k \right)  \\
+& +\frac{\tau^2}{2}\left(   (\lambda^l)^2 x^k_{(0)} + (a + \lambda^l)D^k + (2a+\lambda^l)F^k + \lambda^lE^k  \right)\\
+& +\frac{\tau^3}{6} \left((\lambda^l)^3 x^k_{(0)} + (a^2 + \lambda^l(a+\lambda^l))D^k + (4a^2+\lambda^l(2a+\lambda^l))F^k +(\lambda^l)^2E^k \right)\\
+& +\frac{\tau^4}{24}\left( (\lambda^l)^4 x^k_{(0)} + (a+\lambda^l)(a^2 + (\lambda^l)^2)D^k + (2a+\lambda^l)(4a^2+ (\lambda^l)^2)F^k + (\lambda^l)^3E^k \right) \bigg]
+%	x^i_{\text{RK4}} &=  \sum_{l = 1}^{3} \psi^i_l\bar{\psi}^l_i \left(\sum_{j = 0}^{4}  \left[ \frac{(\lambda^l\tau)^j }{j!} %\left(   x^i_{(0)} -  \frac{ D^k}{a-\lambda^l}  - \frac{ F^k}{2a-\lambda^l}  \right)  \right. \right. \\
+%	&\left. \left. + \frac{(a\tau)^j}{j!} \frac{ D^k}{a-\lambda^l}  + \frac{(2a\tau)^j}{j!}  \frac{ F^k}{2a-\lambda^l}  \right] - %\sum_{j = 1}^{4}  \frac{(-\lambda^l)^{j-1}\tau^j }{j!}  E^k \right) \\
+\end{split}
+\ee
+
+By substituting $D^k$,$E^k$ and $F^k$ with their original values in terms of $\alpha^k$, $\beta^k$ and $\gamma^k$, respectively, one can avoid numerical cancelation, which unfortunately occurs. Formula \ref{taylor_x-RK} can then be rewritten as
+
+\be{taylor_x-RK2}
+\begin{split}
+	x^i_{\text{RK4}} =  &\psi^i_l\bar{\psi}^l_k \bigg[\bigg. x^k_{(0)} + \tau\left( \lambda^l x^k_{(0)} + q^k_{(0)} \right)  \\
+	& +\frac{\tau^2}{2}\left((\lambda^l)^2 x^k_{(0)} + \lambda^l q^k_{(0)} +  (v_{\parallel,0}+\frac{b}{a})(a\alpha^k + 2v_{\parallel,0}\beta^k) \right)\\
+		& +\frac{\tau^3}{6} \bigg(\bigg.(\lambda^l)^3 x^k_{(0)} + (\lambda^l)^2 q^k_{(0)}+ (av_{\parallel,0}+b)(a+\lambda^l)\alpha^k  \\ 
+		&+(-2b(a+\lambda^l)(v_{\parallel,0}+\frac{b}{a}) + 2a(2a+\lambda^l)(v_{\parallel,0}+\frac{b}{a})^2)\beta^k \bigg.\bigg)\\
+	& +\frac{\tau^4}{24}\bigg(\bigg.(\lambda^l)^4 x^k_{(0)} + (\lambda^l)^3 q^k_{(0)} + a(a^2+\lambda^la+\lambda^2)(v_{\parallel,0}+\frac{b}{a})\alpha^k \\
+	& +(- 2 \frac{b}{a}(v_{\parallel,0}+\frac{b}{a}) + 
+	a(8a^2+4\lambda^la + 2(\lambda^l)^2)(v_{\parallel,0}+\frac{b}{a})^2)\beta^k
+	 \bigg.\bigg) \bigg]
+	%	x^i_{\text{RK4}} &=  \sum_{l = 1}^{3} \psi^i_l\bar{\psi}^l_i \left(\sum_{j = 0}^{4}  \left[ \frac{(\lambda^l\tau)^j }{j!} %\left(   x^i_{(0)} -  \frac{ D^k}{a-\lambda^l}  - \frac{ F^k}{2a-\lambda^l}  \right)  \right. \right. \\
+	%	&\left. \left. + \frac{(a\tau)^j}{j!} \frac{ D^k}{a-\lambda^l}  + \frac{(2a\tau)^j}{j!}  \frac{ F^k}{2a-\lambda^l}  \right] - %\sum_{j = 1}^{4}  \frac{(-\lambda^l)^{j-1}\tau^j }{j!}  E^k \right) \\
+\end{split}
+\ee
+
+
+If one is interested in the absolute error of this method, further terms (up to infinity) of the Taylor series expansion of the solution can be computed:
+\be{}
+\begin{split}
+	\Delta x^i_{(5)} &= \psi^i_l \sum_{l = 1}^{3} \left( \sum_{j = 5}^{\infty}  \left[ \frac{(\lambda^l\tau)^j }{j!} \left(  \bar{\psi}^l_i x^i_{(0)} -  \frac{\bar{\psi}^l_k D^k}{a-\lambda^l}  - \frac{\bar{\psi}^l_k F^k}{2a-\lambda^l}  \right)  \right. \right. \\
+	&\left. \left. + \frac{(a\tau)^j}{j!} \frac{\bar{\psi}^l_k D^k}{a-\lambda^l}  + \frac{(2a\tau)^j}{j!}  \frac{\bar{\psi}^l_k F^k}{2a-\lambda^l}  \right] - \sum_{j = 5}^{\infty}  \frac{(-\lambda^l)^{j-1}\tau^j }{j!} \bar{\psi}^l_k E^k \right) \\
+\end{split}
+\ee
+An expression for the Runge-Kutta error of position as a function of initial conditions, eigenvalues and eigenvectors of $\hat{a}$ has therefore been found.
+
+
+
+
+%\subsection{Physical estimation by analytical simplification}
+%\subsubsection{Eigenvalues of $\hat{a}$}
+%\noindent
+%In this section we want to calculate an analytical expression for the eigenvalues of $\hat{a}$ which we can use to calculate the RK-error according to formula \ref{taylor_x-RK}. It is important to note, that we only need to calculate the eigenvalues for the matrix $a_l^i$ with $l = 1,2,3$, as the $v_\parallel$ -dependency is contained in function $q^i$. Let's start by looking at the definition of $a^i_l$ (equation \ref{amatdef}): 
+%$ a^i_l = \varepsilon^{ijk}\left(
+%2\difp{U}{x^l}\difp{}{x^j}\frac{B_k}{\omega_c}+\difp{U}{x^j}\difp{}{x^l}\frac{B_k}{\omega_c}
+%\right) $
+%We can see that this function depends on the gradient of $U$, which in the general case will point in some unknown direction. Since eigenvalues are invariant under unitary transformations, we can simply rotate the coordinate system in such a way that we can assume that the gradient of $U$ is pointing in the $x^1$ direction, this will simplify the calculation for the eigenvalues of $a^i_l$ tremendously. The gradient of $U$ is therefore:
+%\be{nablaU}
+%\vec{\nabla}U = \vec{e_1} \frac{\partial U}{\partial x^1}
+%\ee
+%Let's try to write $a^i_l$ in a compact way by using $\frac{B_k}{\omega_c} = h_k \frac{cm}{e}$ and setting $\frac{cm}{e} = 1$:
+%\be{a_easy}
+%\hat{a}^\prime = \vec{\nabla} (\underbrace{\vec{h}\cross\vec{\nabla} U}_{\vec{v}}) 
+%\ee
+%$\hat{a}^\prime$ then takes the form:
+%\be{amat1}
+%\hat{a}^\prime=
+%\begin{bmatrix}
+%0 & \frac{\partial v_2}{\partial x^1}  & \frac{\partial v_3}{\partial x^1} \\
+%0 & \frac{\partial v_2}{\partial x^2}  & \frac{\partial v_3}{\partial x^2} \\
+%0 & \frac{\partial v_2}{\partial x^3}  & \frac{\partial v_3}{\partial x^3}
+%\end{bmatrix}
+% = 
+% \begin{bmatrix}
+% 	0 & \alpha_{12}  &\alpha_{13}  \\
+% 	0 & \alpha_{22}   &\alpha_{23}   \\
+% 	0 & \alpha_{32}   & \alpha_{33} 
+% \end{bmatrix}
+%\ee
+%We are now interested in the calculation of the eigenvalues of this matrix:
+%\be{a_eigenvalues1}
+%det\begin{vmatrix}
+%	0 -\lambda & \frac{\partial v_2}{\partial x^1}  & \frac{\partial v_3}{\partial x^1} \\
+%	0 & \frac{\partial v_2}{\partial x^2} -\lambda  & \frac{\partial v_3}{\partial x^2} \\
+%	0 & \frac{\partial v_2}{\partial x^3}  & \frac{\partial v_3}{\partial x^3}-\lambda 
+%\end{vmatrix} \overset{!}{=} 0
+%\ee
+%The equation for the eigenvalues is therefore:
+%\be{a_eig2}
+%(-\lambda)(\alpha_{22}-\lambda)(\alpha_{33}-\lambda) + \alpha_{32}\alpha_{23}\lambda = 0 
+%\ee
+%Expanding the products yields:
+%\be{a_eig3}
+%-\lambda^3 + \lambda^2(\alpha_{33}+\alpha_{22}) - \lambda(\alpha_{22}\alpha_{33}-\alpha_{23}\alpha_{32}) = 0
+%\ee
+%We can immediately say, that one eigenvalue is $\lambda = 0$, for the other eigenvalues we get:
+%\be{a_eig4}
+%\lambda_{2,3} = \frac{\alpha_{22}+\alpha_{33} \pm \sqrt{(\alpha_{22}+ \alpha_{33})^2 - 4(\alpha_{22}\alpha_{33}-\alpha_{23}\alpha_{32})}}{2}
+%\ee
+%After further simplification this formula can be written as:
+%\be{a_eig5}
+%\lambda_{2,3} = \frac{\alpha_{22}+\alpha_{33} \pm \sqrt{(\alpha_{22}- \alpha_{33})^2 + 4\alpha_{23}\alpha_{32}}}{2}
+%\ee
+
+%\subsubsection{Physical estimation of Eigenvalues}
+%\noindent
+%Starting with matrix \ref{eq:matrix3}, one can assume, that $\frac{\partial U}{\partial x^j}$ points only in $\vec{e}_1$ direction.
+%\be{}
+%\frac{\partial U}{\partial x^j} = \vec{e}_1 \frac{\partial U}{\partial x^1}.
+%\ee
+%Thus, the matrix elements $a^i_1$ are zero.\\
+%By using $\frac{B_k}{\omega_c} = h_k \frac{cm}{e}$, the Eigenvalues of $a^i_l$ are:
+%\bea{}
+%\lambda_1 &=& 0 \nonumber \\
+%\lambda_2 &=& \frac{1}{2} \frac{cm}{e} \left( \frac{\partial h_2}{\partial x^3} - \frac{\partial h_3}{\partial x^2} +\sqrt{\left( \frac{\partial h_2}{\partial x^3}  + \frac{\partial h_3}{\partial x^2}   \right)^2  - 4 \frac{\partial h_2}{\partial x^2} \frac{\partial h_3}{\partial x^3} } \right) \frac{\partial U}{\partial x^1} \nonumber \\
+%\lambda_3 &=& \frac{1}{2} \frac{cm}{e} \left( \frac{\partial h_2}{\partial x^3} - \frac{\partial h_3}{\partial x^2} -\sqrt{\left( \frac{\partial h_2}{\partial x^3}  + \frac{\partial h_3}{\partial x^2}   \right)^2  - 4 \frac{\partial h_2}{\partial x^2} \frac{\partial h_3}{\partial x^3} } \right) \frac{\partial U}{\partial x^1}
+%\eea
+%Since we assume an axisymmetric magnetic configuration (unperturbed Tokamak), the magnetic field is invariant regarding rotation around the z-axis. Hence, all derivatives $\frac{\partial}{\partial x^2}$ are zero.\\
+%One obtains only one non-zero eigenvalue
+%\be{}
+%\lambda_2 = \frac{cm}{e} \frac{\partial h_2}{\partial x^3} \frac{\partial U}{\partial x^1}.
+%\ee
+%\textbf{Physical estimation of $\frac{\partial h_2}{\partial x^3}$:}\\
+%First of all, we want a physical estimation for $\frac{\partial h_2}{\partial x^3}$.
+%\be{}
+%\frac{\partial h_2}{\partial x^3} = \frac{\partial h_\varphi}{\partial z} =  \frac{\partial }{\partial z} \frac{B_\varphi}{B} = \frac{\partial }{\partial z} \frac{\hat{B} \cdot \vec{e}_\varphi }{B}
+%\ee
+%For the covariant component of the magnetic field $\hat{B}$, one needs the covariant unit vector 
+%\be{}
+%\vec{e}_\varphi = \frac{\mathrm{d}\vec{r}}{\mathrm{d} \varphi} = R \hat{\vec{e}}_\varphi,
+%\ee
+%where $\hat{\vec{e}}_\varphi$ is the physical $\varphi$-unit vector in cylindrical coordinates.\\
+%Thus, one obtains
+%\bea{}
+%\frac{\partial h_\varphi}{\partial z} &=& R \frac{\partial }{\partial z} \left( \frac{1}{B} \underbrace{ \hat{B} \cdot \hat{\vec{e}}_\varphi  }_{\hat{B}_{\text{tor}}} \right) = R \frac{\partial }{\partial z} \left( \frac{\hat{B}_{\text{tor}}}{\sqrt{\hat{B}_{\text{tor}}^2 + \hat{B}_{\text{pol}}^2}} \right) \nonumber \\
+%&=& R \frac{\partial }{\partial z} \left( 1 - \frac{1}{2}  \frac{\hat{B}^2_{\text{pol}}}{\hat{B}^2_{\text{tor}}}\right) = -R \underbrace{\frac{\hat{B}_{\text{pol}}}{\hat{B}_{\text{tor}}}}_{\frac{r}{qR}} \frac{\partial }{\partial z} \frac{\hat{B}_{\text{pol}}}{\hat{B}_{\text{tor}}} = -\frac{r}{q} \frac{\partial }{\partial z} \frac{r}{qR}.
+%\eea
+%Expressing the minor radius r as $r = \sqrt{(R-R_0)^2+z^2}$ and computing the derivative $\frac{\partial r}{\partial z} = \frac{z}{r}$ yields
+%\be{}
+%\frac{\partial h_\varphi}{\partial z} = - \frac{\slashed{r}}{q^2R} \frac{z}{\slashed{r}} \sim \frac{r}{Rq^2}
+%\ee
+%\textbf{Physical estimation of $\frac{\partial U}{\partial x^1}$:}\\
+%The quantity $U$ is defined by 
+%\be{}
+%U = \frac{v_\parallel^2}{2} = \frac{1}{m}\left(w-J_\perp \omega_c - e_\alpha \Phi  \right),
+%\ee
+%where $w$ and $J_\perp$ are constants. Therefore, (according to Sergei) the gradient of U can be estimated by
+%\be{}
+%\nabla U \sim \nabla B\frac{v_\perp^2}{B} \sim \frac{v^2}{L_B},
+%\ee
+%where $L_B$ is the characteristic length of the magnetic field and further $L_B \approx R$, where $R$ is the major radius.
+%Thus, $\frac{\partial U}{\partial x^1} \approx \frac{v^2}{R} $.\\
+%\textbf{Physical estimation of $\lambda_2$:}\\
+%Putting together the two expressions from above yields
+%\be{}
+%\lambda_2 = \frac{cm}{e} \frac{\partial h_\varphi}{\partial z} \frac{\partial U}{\partial R}\sim  \frac{cm}{e} \frac{r}{Rq^2}  \frac{v^2}{R} = \frac{cm}{e} \frac{rv^2}{R^2q^2}.
+%\ee
+%
+%\subsubsection{Physical estimation of $\Delta\tau$}
+%\noindent
+%The orbit parameter $\tau$ is related to time by
+%\be{}
+%\mathrm{d}t = B_\parallel^\ast \sqrt{g}\mathrm{d}\tau.
+%\ee
+%For a finite time $\Delta t$ to pass a tetrahedron toroidally and an estimation of $B_\parallel^\ast \approx B$ one obtains
+%\be{}
+%\Delta \tau \sim \frac{\Delta t}{BR} \sim \frac{1}{BR} \frac{\Delta l_\varphi}{v_\parallel} = \frac{1}{BR} \frac{\Delta l_\varphi}{\lambda_p v}, 
+%\ee
+%where $\Delta l_\varphi$ is the toroidal length of a tetrahedron, and $\lambda_p = \frac{v_\parallel}{v}$ is the pitch parameter.\\
+%The finite time $\Delta t$ can be approximated by assuming that the toroidal length of a tetrahedron $\Delta l_\varphi$ is
+%\be{}
+%\Delta l_\varphi = \frac{2\pi}{N_\varphi}R,
+%\ee
+%where $N_\varphi$ is the number of cells in toroidal direction (1-dimensional).
+%Thus, finite orbit parameter to pass a tetrahedron toroidally is
+%\be{}
+%\Delta \tau \sim \frac{2 \pi R}{\lambda_p v N_\varphi B R } = \frac{2 \pi}{\lambda_p v N_\varphi B} 
+%\ee
+%
+%\subsubsection{Physical estimation of $\lambda_2 \Delta \tau$}
+%\noindent
+%The RK4 error of 3DGeoInt scales with the product $\lambda_2 \Delta \tau$:
+%\be{}
+%\lambda_2 \Delta\tau \sim \frac{cm}{e} \frac{rv^2}{R^2q^2} \frac{2 \pi}{\lambda_p v N_\varphi B}
+%\ee
+%By introducing the cyclotron frequency $\omega_c = \frac{eB}{mc}$, the above equation becomes
+%\be{}
+%\lambda_2 \Delta\tau \sim \frac{r}{R^2q^2} \frac{2 \pi}{\lambda_p N_\varphi} \underbrace{\frac{v}{\omega_c}}_{\approx \rho_l},
+%\ee
+%where $\rho_l$ is the larmor radius.
+%
+%\subsection{Relative error of the RK4-method}
+%\noindent
+%We are interested now, how large the relative error of the RK4-method is respective $N_\varphi$, $\rho_l$ and $\lambda_p$.
+%Thus, we need to compute the following quantities:
+%\bea{}
+%\frac{\Delta R^{(5)}}{R^{\text{RK4}}} & \sim  &  \\
+%\frac{\Delta \varphi^{(5)}}{\varphi^{\text{RK4}}} & \sim  & \\
+%\frac{\Delta Z^{(5)}}{R^{\text{RK4}}} & \sim  & \\
+%\frac{\Delta v_\parallel^{(5)}}{v_{\text{mod}}^{\text{RK4}}} & \sim  & 
+%\eea
+%%\end{document}
