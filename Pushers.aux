@@ -18,27 +18,31 @@
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{Eder_DA}
 \citation{Eder_DA}
+\citation{Eder_DA}
+\citation{Eder_DA}
 \babel@aux{english}{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {1}Particle orbit pusher algorithms}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Pusher algorithms for particle orbits}{1}{chapter.1}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {1.1}Pusher routine \texttt  {pusher\_tetra\_orbit}}{2}{section.1.1}\protected@file@percent }
-\newlabel{sec:NumericalPusher}{{1.1}{2}{Pusher routine \texttt {pusher\_tetra\_orbit}}{section.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Code structure of \texttt  {pusher\_tetra\_orbit\_mod} and associated subroutine\relax }}{3}{figure.caption.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Intersections of the particle orbit $x^i(\tau )$ with planes confining the cell are displayed. For demonstrative purposes, the tetrahedral cell is depicted as a two-dimensional triangle. The particle enters the cell at $x^i(\tau _0)$ and exits again at \raisebox  {.5pt}{\textcircled {\raisebox  {-.9pt} {1}}. This figure is taken from \cite  {Eder_DA}.} \relax }}{1}{figure.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:Codestructure_Pusher_tetra_orbit}{{1.1}{3}{Code structure of \texttt {pusher\_tetra\_orbit\_mod} and associated subroutine\relax }{figure.caption.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1.1}{\ignorespaces Parameter overview for wrapper subroutine \texttt  {orbit\_timestep\_3dgeoint}, defines initial conditions and duration of particle motion, orientations of velocities are taken with respect to the orientation of the magnetic field $\mathaccentV {vec}17E{B}$.\relax }}{3}{table.caption.2}\protected@file@percent }
-\newlabel{tab:input_orbit_timestep}{{1.1}{3}{Parameter overview for wrapper subroutine \texttt {orbit\_timestep\_3dgeoint}, defines initial conditions and duration of particle motion, orientations of velocities are taken with respect to the orientation of the magnetic field $\vec {B}$.\relax }{table.caption.2}{}}
+\newlabel{fig:triangle01}{{1.1}{1}{Intersections of the particle orbit $x^i(\tau )$ with planes confining the cell are displayed. For demonstrative purposes, the tetrahedral cell is depicted as a two-dimensional triangle. The particle enters the cell at $x^i(\tau _0)$ and exits again at \raisebox {.5pt}{\textcircled {\raisebox {-.9pt} {1}}. This figure is taken from \cite {Eder_DA}.} \relax }{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Pusher routine \texttt  {pusher\_tetra\_rk}}{2}{section.1.1}\protected@file@percent }
+\newlabel{sec:NumericalPusher}{{1.1}{2}{Pusher routine \texttt {pusher\_tetra\_rk}}{section.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Code structure of \texttt  {pusher\_tetra\_orbit\_mod} and associated subroutine\relax }}{3}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:Codestructure_Pusher_tetra_orbit}{{1.2}{3}{Code structure of \texttt {pusher\_tetra\_orbit\_mod} and associated subroutine\relax }{figure.caption.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1.1}{\ignorespaces Parameter overview for wrapper subroutine \texttt  {orbit\_timestep\_gorilla}, defines initial conditions and duration of particle motion, orientations of velocities are taken with respect to the orientation of the magnetic field $\mathaccentV {vec}17E{B}$.\relax }}{4}{table.caption.3}\protected@file@percent }
+\newlabel{tab:input_orbit_timestep}{{1.1}{4}{Parameter overview for wrapper subroutine \texttt {orbit\_timestep\_gorilla}, defines initial conditions and duration of particle motion, orientations of velocities are taken with respect to the orientation of the magnetic field $\vec {B}$.\relax }{table.caption.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}Initializing constants of motion}{4}{subsection.1.1.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}Particle pushing algorithm}{4}{subsection.1.1.2}\protected@file@percent }
 \citation{Eder_DA}
 \citation{Eder_DA}
-\@writefile{lot}{\contentsline {table}{\numberline {1.2}{\ignorespaces Parameter overview for \texttt  {pusher\_tetra\_orbit}\relax }}{5}{table.caption.3}\protected@file@percent }
-\newlabel{tab:input_pusher_tetra_orbit}{{1.2}{5}{Parameter overview for \texttt {pusher\_tetra\_orbit}\relax }{table.caption.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Initialize pusher}{5}{section*.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Initial guess of exit plane}{6}{section*.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1.2}{\ignorespaces Parameter overview for \texttt  {pusher\_tetra\_rk}\relax }}{5}{table.caption.4}\protected@file@percent }
+\newlabel{tab:input_pusher_tetra_orbit}{{1.2}{5}{Parameter overview for \texttt {pusher\_tetra\_rk}\relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Initialize pusher}{5}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Initial guess of exit plane}{6}{section*.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.3}Convergence and validation loop \texttt  {conv\_val\_loop}}{6}{subsection.1.1.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.4}Final processing}{10}{subsection.1.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.2}Pusher routine \texttt  {pusher\_tetra\_orbit\_analytic}}{10}{section.1.2}\protected@file@percent }
-\newlabel{sec:AnalyticPusher}{{1.2}{10}{Pusher routine \texttt {pusher\_tetra\_orbit\_analytic}}{section.1.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.3}Search routine for tetrahedra with starting points}{11}{section.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Pusher routine \texttt  {pusher\_tetra\_poly}}{10}{section.1.2}\protected@file@percent }
+\newlabel{sec:AnalyticPusher}{{1.2}{10}{Pusher routine \texttt {pusher\_tetra\_poly}}{section.1.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Search routine for tetrahedra with starting points}{12}{section.1.3}\protected@file@percent }

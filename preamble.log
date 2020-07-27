@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.17)  4 MAY 2020 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.17)  22 JUL 2020 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,6 +23,8 @@ File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+\bibdata{gorilla_paper.bib}
+No file preamble.bbl.
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2019/06/03 3.32 The Babel package
 
@@ -1162,8 +1164,8 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 
  
 Here is how much of TeX's memory you used:
- 43894 strings out of 492609
- 991961 string characters out of 6131462
+ 43895 strings out of 492609
+ 991965 string characters out of 6131462
  1176424 words of memory out of 5000000
  47286 multiletter control sequences out of 15000+600000
  533506 words of font info for 27 fonts, out of 8000000 for 9000
