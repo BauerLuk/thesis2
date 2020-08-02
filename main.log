@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.17)  28 JUL 2020 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.17)  2 AUG 2020 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1471,56 +1471,93 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<Titlepage.pdf, id=199, 597.50829pt x 845.0471pt>
-File: Titlepage.pdf Graphic file (type pdf)
-<use Titlepage.pdf>
-Package pdftex.def Info: Titlepage.pdf  used on input line 5.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: Titlepage.pdf Graphic file (type pdf)
-<use Titlepage.pdf>
-Package pdftex.def Info: Titlepage.pdf  used on input line 5.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<Titlepage.pdf, id=202, page=1, 597.50829pt x 845.0471pt>
-File: Titlepage.pdf Graphic file (type pdf)
-<use Titlepage.pdf, page 1>
-Package pdftex.def Info: Titlepage.pdf , page1 used on input line 5.
-(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-File: Titlepage.pdf Graphic file (type pdf)
-<use Titlepage.pdf, page 1>
-Package pdftex.def Info: Titlepage.pdf , page1 used on input line 5.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: Titlepage.pdf Graphic file (type pdf)
-<use Titlepage.pdf, page 1>
-Package pdftex.def Info: Titlepage.pdf , page1 used on input line 5.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: Titlepage.pdf Graphic file (type pdf)
-<use Titlepage.pdf, page 1>
-Package pdftex.def Info: Titlepage.pdf , page1 used on input line 5.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: Titlepage.pdf Graphic file (type pdf)
-<use Titlepage.pdf, page 1>
-Package pdftex.def Info: Titlepage.pdf , page1 used on input line 5.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [1
 
- <./Titlepage.pdf>]
-<Titlepage.pdf, id=212, page=2, 597.50829pt x 845.0471pt>
-File: Titlepage.pdf Graphic file (type pdf)
-<use Titlepage.pdf, page 2>
-Package pdftex.def Info: Titlepage.pdf , page2 used on input line 5.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: Titlepage.pdf Graphic file (type pdf)
-<use Titlepage.pdf, page 2>
-Package pdftex.def Info: Titlepage.pdf , page2 used on input line 5.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: Titlepage.pdf Graphic file (type pdf)
-<use Titlepage.pdf, page 2>
-Package pdftex.def Info: Titlepage.pdf , page2 used on input line 5.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [2 <./Titlepage.pdf>] (./Abstract.tex)
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Titlepage_Diploma_Thesis_Lukas_Bauer.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, id=212, 597.55246pt x 845.07724pt>
+File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>
+Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf  used on inpu
+t line 5.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Titlepage_Diploma_Thesis_Lukas_Bauer.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>
+Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf  used on inpu
+t line 5.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Titlepage_Diploma_Thesis_Lukas_Bauer.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Titlepage_Diploma_Thesis_Lukas_Bauer.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, id=215, page=1, 597.55246pt x 845.07
+724pt>
+File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
+Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page1 used 
+on input line 5.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
+Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page1 used 
+on input line 5.
+(pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
+File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
+Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page1 used 
+on input line 5.
+(pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
+File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
+Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page1 used 
+on input line 5.
+(pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
+File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
+Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page1 used 
+on input line 5.
+(pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
+[1
+
+ <./Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Titlepage_Diploma_Thesis_Lukas_Bauer.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, id=222, page=2, 597.55246pt x 845.07
+724pt>
+File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 2>
+Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page2 used 
+on input line 5.
+(pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
+File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 2>
+Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page2 used 
+on input line 5.
+(pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
+File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 2>
+Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page2 used 
+on input line 5.
+(pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
+[2 <./Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>] (./Abstract.tex)
+(./Kurzfassung.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 10.
+less on input line 4.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1531,15 +1568,34 @@ This may cause the page layout to be inconsistent, however.
 [3
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./Acknowledgements.tex
+Overfull \hbox (3.42213pt too wide) in paragraph at lines 6--4
+\T1/cmr/m/n/12 (-20) rokinetis-chen Sim-u-la-tion-spro-gram-men. Für diese An-w
+en-dun-gen wurde der ge-ometrische
+ []
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 4.
+
+[4
+
+])
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 13.
+
+[5
+
+] (./main.toc
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 41.
 
-[4
+[6
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 42.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 45.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -1551,42 +1607,34 @@ Package microtype Info: Loading generic protrusion settings for font family
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [5] (./main.lof
 
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 14.
-
-[6
-
-] [7]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
-)
-\tf@lof=\write6
-\openout6 = `main.lof'.
-
-
-(./Introduction.tex [8]
+(./Introduction.tex [7]
 Chapter 1.
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 10.
+less on input line 12.
 
-[9
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 
+      [1
 
-] [10]) (./Grid.tex [11]
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 
+      [2]) (./Grid.tex [3]
 Chapter 2.
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 17.
 
-[12
+[4
 
-] [13] [14]
+] [5] [6]
 Package epstopdf Info: Source file: <figures/Tetra_split.eps>
 (epstopdf)                    date: 2020-03-17 16:03:28
 (epstopdf)                    size: 80380 bytes
@@ -1602,25 +1650,25 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/Tetra_split-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figures/Tetra_split-eps-converted-to.pdf, id=474, 1152.305pt x 1018.80624pt>
+<figures/Tetra_split-eps-converted-to.pdf, id=356, 1152.305pt x 1018.80624pt>
 File: figures/Tetra_split-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Tetra_split-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Tetra_split-eps-converted-to.pdf  used on inpu
 t line 58.
 (pdftex.def)             Requested size: 345.98685pt x 305.90851pt.
-[15] [16 <./figures/Tetra_split-eps-converted-to.pdf>] [17]
-<figures/full_grid_rect.png, id=502, 1018.80624pt x 809.0225pt>
+[7] [8 <./figures/Tetra_split-eps-converted-to.pdf>] [9]
+<figures/full_grid_rect.png, id=385, 1018.80624pt x 809.0225pt>
 File: figures/full_grid_rect.png Graphic file (type png)
 <use figures/full_grid_rect.png>
 Package pdftex.def Info: figures/full_grid_rect.png  used on input line 92.
 (pdftex.def)             Requested size: 194.61554pt x 154.54297pt.
-<figures/slice_grid_rect.png, id=504, 978.65625pt x 1032.85875pt>
+<figures/slice_grid_rect.png, id=387, 978.65625pt x 1032.85875pt>
 File: figures/slice_grid_rect.png Graphic file (type png)
 <use figures/slice_grid_rect.png>
 Package pdftex.def Info: figures/slice_grid_rect.png  used on input line 98.
 (pdftex.def)             Requested size: 194.61554pt x 205.38608pt.
- [18 <./figures/full_grid_rect.png> <./figures/slice_grid_rect.png>]
-<figures/field_lines_rect_grid.pdf, id=516, 568.1225pt x 422.57875pt>
+ [10 <./figures/full_grid_rect.png> <./figures/slice_grid_rect.png>]
+<figures/field_lines_rect_grid.pdf, id=401, 568.1225pt x 422.57875pt>
 File: figures/field_lines_rect_grid.pdf Graphic file (type pdf)
 <use figures/field_lines_rect_grid.pdf>
 Package pdftex.def Info: figures/field_lines_rect_grid.pdf  used on input line 
@@ -1642,7 +1690,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/field_lines_fine_rect_grid-ep
 s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
 n <1.5> allowed
-<figures/field_lines_fine_rect_grid-eps-converted-to.pdf, id=517, 422.57875pt x
+<figures/field_lines_fine_rect_grid-eps-converted-to.pdf, id=402, 422.57875pt x
  317.185pt>
 File: figures/field_lines_fine_rect_grid-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1655,9 +1703,9 @@ Overfull \hbox (2.61047pt too wide) in paragraph at lines 108--122
 [][]  [] 
  []
 
-[19 <./figures/field_lines_rect_grid.pdf> <./figures/field_lines_fine_rect_grid
--eps-converted-to.pdf>] [20]
-<figures/field_lines_torus.pdf, id=548, 867.24pt x 578.16pt>
+[11 <./figures/field_lines_rect_grid.pdf> <./figures/field_lines_fine_rect_grid
+-eps-converted-to.pdf>] [12]
+<figures/field_lines_torus.pdf, id=433, 867.24pt x 578.16pt>
 File: figures/field_lines_torus.pdf Graphic file (type pdf)
 <use figures/field_lines_torus.pdf>
 Package pdftex.def Info: figures/field_lines_torus.pdf  used on input line 159.
@@ -1667,8 +1715,8 @@ Package pdftex.def Info: figures/field_lines_torus.pdf  used on input line 159.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21] [22 <./figures/field_lines_torus.pdf>] [23]
-<figures/fli_angle_graphics.pdf, id=594, 597.50786pt x 845.04686pt>
+[13] [14 <./figures/field_lines_torus.pdf>] [15]
+<figures/fli_angle_graphics.pdf, id=480, 597.50786pt x 845.04686pt>
 File: figures/fli_angle_graphics.pdf Graphic file (type pdf)
 <use figures/fli_angle_graphics.pdf>
 Package pdftex.def Info: figures/fli_angle_graphics.pdf  used on input line 196
@@ -1678,43 +1726,31 @@ Package pdftex.def Info: figures/fli_angle_graphics.pdf  used on input line 196
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24] [25 <./figures/fli_angle_graphics.pdf>] [26]
-Overfull \hbox (39.40865pt too wide) in paragraph at lines 237--240
+[16] [17 <./figures/fli_angle_graphics.pdf>] [18]
+Overfull \hbox (2.36769pt too wide) in paragraph at lines 237--239
 \T1/cmr/m/n/12 (-20) tioned, this is done in sub-rou-tine \T1/cmtt/m/n/12 magda
-ta_in_symfluxcoord_ext(inp_label,s,psi,theta, 
+ta_in_symfluxcoord_ext(inp_label,s,psi, 
  []
 
-[27]
-Overfull \hbox (34.52095pt too wide) in paragraph at lines 295--296
-\T1/cmr/m/n/12 (-20) So far, the sub-rou-tine \T1/cmtt/m/n/12 magdata_in_symflu
-xcoord_ext(inp_label,s,psi,theta,q,dq_ds, 
- []
-
-
-Overfull \hbox (4.94635pt too wide) in paragraph at lines 295--296
-\T1/cmtt/m/n/12 sqrtg,bmod,dbmod_dtheta,R,dR_ds,dR_dtheta,Z,dZ_ds,dZ_dtheta) \T
-1/cmr/m/n/12 (-20) has been con-
- []
-
-[28]
-<figures/make_tetra_grid_graphics.pdf, id=657, 578.16pt x 433.62pt>
+[19] [20]
+<figures/make_tetra_grid_graphics.pdf, id=544, 578.16pt x 433.62pt>
 File: figures/make_tetra_grid_graphics.pdf Graphic file (type pdf)
 <use figures/make_tetra_grid_graphics.pdf>
 Package pdftex.def Info: figures/make_tetra_grid_graphics.pdf  used on input li
-ne 298.
+ne 299.
 (pdftex.def)             Requested size: 432.48192pt x 324.36067pt.
- [29 <./figures/make_tetra_grid_graphics.pdf>] [30] [31]
-Overfull \hbox (2.63168pt too wide) in paragraph at lines 435--438
+ [21 <./figures/make_tetra_grid_graphics.pdf>] [22] [23]
+Overfull \hbox (2.63168pt too wide) in paragraph at lines 436--439
 \T1/cmr/m/n/12 (-20) with ar-gu-ments (\T1/cmtt/m/n/12 verts_per_ring, nphi, ve
 rts_rphiz, verts_sthetaphi, efit_
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--438
+Underfull \hbox (badness 10000) in paragraph at lines 436--439
 
  []
 
-[32] [33]
+[24] [25]
 Package epstopdf Info: Source file: <figures/Comparison_smin_annulus_a.eps>
 (epstopdf)                    date: 2020-05-07 20:26:32
 (epstopdf)                    size: 28492 bytes
@@ -1724,15 +1760,15 @@ erted-to.pdf>
 (epstopdf)                    size: 4942 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/Comparison_smin_an
 nulus_a-eps-converted-to.pdf figures/Comparison_smin_annulus_a.eps>
-(epstopdf)             \includegraphics on input line 445.
+(epstopdf)             \includegraphics on input line 446.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Comparison_smin_annulus_a-eps-converted-to.pdf, id=711, 394.47375pt x 
+<figures/Comparison_smin_annulus_a-eps-converted-to.pdf, id=599, 394.47375pt x 
 420.57124pt>
 File: figures/Comparison_smin_annulus_a-eps-converted-to.pdf Graphic file (type
  pdf)
 <use figures/Comparison_smin_annulus_a-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Comparison_smin_annulus_a-eps-converted-to.pdf
-  used on input line 445.
+  used on input line 446.
 (pdftex.def)             Requested size: 194.61554pt x 207.48712pt.
 Package epstopdf Info: Source file: <figures/Comparison_smin_annulus_b.eps>
 (epstopdf)                    date: 2020-05-07 20:26:34
@@ -1743,55 +1779,44 @@ erted-to.pdf>
 (epstopdf)                    size: 4183 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/Comparison_smin_an
 nulus_b-eps-converted-to.pdf figures/Comparison_smin_annulus_b.eps>
-(epstopdf)             \includegraphics on input line 452.
+(epstopdf)             \includegraphics on input line 453.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Comparison_smin_annulus_b-eps-converted-to.pdf, id=712, 394.47375pt x 
+<figures/Comparison_smin_annulus_b-eps-converted-to.pdf, id=600, 394.47375pt x 
 420.57124pt>
 File: figures/Comparison_smin_annulus_b-eps-converted-to.pdf Graphic file (type
  pdf)
 <use figures/Comparison_smin_annulus_b-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Comparison_smin_annulus_b-eps-converted-to.pdf
-  used on input line 452.
+  used on input line 453.
 (pdftex.def)             Requested size: 194.61554pt x 207.48712pt.
-
-Overfull \hbox (12.0555pt too wide) in paragraph at lines 472--476
-\T1/cmr/m/n/12 (-20) where ``\T1/cmtt/m/n/12 &\T1/cmr/m/n/12 (-20) '' de-notes 
-the line con-cate-na-tion op-er-a-tor in For-tran. Next in \T1/cmtt/m/n/12 crea
-te_points_2d\T1/cmr/m/n/12 (-20) ,
- []
-
-[34 <./figures/Comparison_smin_annulus_a-eps-converted-to.pdf> <./figures/Compa
-rison_smin_annulus_b-eps-converted-to.pdf>]pdfTeX warning (ext4): destination w
-ith the same identifier (name{equation.2.3.7}) has been already used, duplicate
- ignored
+ [26 <./figures/Comparison_smin_annulus_a-eps-converted-to.pdf> <./figures/Comp
+arison_smin_annulus_b-eps-converted-to.pdf>]pdfTeX warning (ext4): destination 
+with the same identifier (name{equation.2.3.7}) has been already used, duplicat
+e ignored
 <to be read again> 
                    \relax 
-l.476 \be*
+l.478 \be*
           pdfTeX warning (ext4): destination with the same identifier (name{equ
 ation.2.3.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.476 \be*
+l.478 \be*
           pdfTeX warning (ext4): destination with the same identifier (name{equ
 ation.2.3.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.476 \be*
+l.478 \be*
           pdfTeX warning (ext4): destination with the same identifier (name{equ
 ation.2.3.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.476 \be*
+l.478 \be*
           
-Overfull \hbox (2.82178pt too wide) detected at line 479
+Overfull \hbox (2.82178pt too wide) detected at line 481
 [][] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 :[]
  []
 
-[35]
-Overfull \hbox (5.83604pt too wide) detected at line 495
-[]
- []
-
+[27]
 Package epstopdf Info: Source file: <figures/grid_flux_theta_meshed.eps>
 (epstopdf)                    date: 2020-05-07 19:45:22
 (epstopdf)                    size: 101272 bytes
@@ -1801,15 +1826,15 @@ ed-to.pdf>
 (epstopdf)                    size: 15265 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/grid_flux_theta_me
 shed-eps-converted-to.pdf figures/grid_flux_theta_meshed.eps>
-(epstopdf)             \includegraphics on input line 501.
+(epstopdf)             \includegraphics on input line 503.
 Package epstopdf Info: Output file is already uptodate.
-<figures/grid_flux_theta_meshed-eps-converted-to.pdf, id=739, 235.88126pt x 353
+<figures/grid_flux_theta_meshed-eps-converted-to.pdf, id=628, 235.88126pt x 353
 .32pt>
 File: figures/grid_flux_theta_meshed-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figures/grid_flux_theta_meshed-eps-converted-to.pdf>
 Package pdftex.def Info: figures/grid_flux_theta_meshed-eps-converted-to.pdf  u
-sed on input line 501.
+sed on input line 503.
 (pdftex.def)             Requested size: 194.61554pt x 291.51416pt.
 Package epstopdf Info: Source file: <figures/grid_geom_theta_meshed.eps>
 (epstopdf)                    date: 2020-05-07 19:45:17
@@ -1820,43 +1845,37 @@ ed-to.pdf>
 (epstopdf)                    size: 15189 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/grid_geom_theta_me
 shed-eps-converted-to.pdf figures/grid_geom_theta_meshed.eps>
-(epstopdf)             \includegraphics on input line 508.
+(epstopdf)             \includegraphics on input line 510.
 Package epstopdf Info: Output file is already uptodate.
-<figures/grid_geom_theta_meshed-eps-converted-to.pdf, id=740, 235.88126pt x 354
+<figures/grid_geom_theta_meshed-eps-converted-to.pdf, id=629, 235.88126pt x 354
 .32375pt>
 File: figures/grid_geom_theta_meshed-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figures/grid_geom_theta_meshed-eps-converted-to.pdf>
 Package pdftex.def Info: figures/grid_geom_theta_meshed-eps-converted-to.pdf  u
-sed on input line 508.
+sed on input line 510.
 (pdftex.def)             Requested size: 194.61554pt x 292.34232pt.
-
-Overfull \hbox (11.8162pt too wide) in paragraph at lines 518--520
-\T1/cmr/m/n/12 (-20) sion is re-al-ized in sub-rou-tine \T1/cmtt/m/n/12 extrude
-_points(verts_per_slice,nphi,phi_position, 
- []
-
-[36]
-Overfull \hbox (51.44188pt too wide) in paragraph at lines 526--528
+ [28]
+Overfull \hbox (2.05394pt too wide) in paragraph at lines 528--531
 \T1/cmr/m/n/12 (-20) otherwise. The re-main-ing pa-ram-e-ters \T1/cmtt/m/n/12 n
 phi\T1/cmr/m/n/12 (-20) , \T1/cmtt/m/n/12 phi_position \T1/cmr/m/n/12 (-20) and
- \T1/cmtt/m/n/12 verts_sthetaphi/verts_rphiz
+ \T1/cmtt/m/n/12 verts_sthetaphi/ver 
  []
 
-[37 <./figures/grid_flux_theta_meshed-eps-converted-to.pdf> <./figures/grid_geo
+[29 <./figures/grid_flux_theta_meshed-eps-converted-to.pdf> <./figures/grid_geo
 m_theta_meshed-eps-converted-to.pdf>]
-Overfull \hbox (1.90051pt too wide) in paragraph at lines 540--546
+Overfull \hbox (1.90051pt too wide) in paragraph at lines 543--549
 \T1/cmtt/m/n/12 heta, repeat_center_point = .true.)\T1/cmr/m/n/12 (-20) . This 
 is called from the sub-rou-tine \T1/cmtt/m/n/12 make_gr 
  []
 
 
-Overfull \hbox (1.3009pt too wide) in paragraph at lines 540--546
+Overfull \hbox (1.3009pt too wide) in paragraph at lines 543--549
 \T1/cmr/m/n/12 (-20) These vari-ables de-note place-hold-ers for tetra-he-dron 
 re-lated data, where \T1/cmtt/m/n/12 verts(1:4,nte
  []
 
-[38]
+[30]
 Package epstopdf Info: Source file: <figures/vertices_2d_slices.eps>
 (epstopdf)                    date: 2020-05-19 14:53:42
 (epstopdf)                    size: 101252 bytes
@@ -1866,16 +1885,16 @@ o.pdf>
 (epstopdf)                    size: 7921 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/vertices_2d_slices
 -eps-converted-to.pdf figures/vertices_2d_slices.eps>
-(epstopdf)             \includegraphics on input line 550.
+(epstopdf)             \includegraphics on input line 553.
 Package epstopdf Info: Output file is already uptodate.
-<figures/vertices_2d_slices-eps-converted-to.pdf, id=769, 706.64pt x 504.88625p
+<figures/vertices_2d_slices-eps-converted-to.pdf, id=659, 706.64pt x 504.88625p
 t>
 File: figures/vertices_2d_slices-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/vertices_2d_slices-eps-converted-to.pdf>
 Package pdftex.def Info: figures/vertices_2d_slices-eps-converted-to.pdf  used 
-on input line 550.
+on input line 553.
 (pdftex.def)             Requested size: 432.48192pt x 309.00478pt.
- [39]
+ [31]
 Package epstopdf Info: Source file: <figures/2Prisms_comparison.eps>
 (epstopdf)                    date: 2020-05-25 14:13:28
 (epstopdf)                    size: 106777 bytes
@@ -1885,16 +1904,16 @@ o.pdf>
 (epstopdf)                    size: 8278 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/2Prisms_comparison
 -eps-converted-to.pdf figures/2Prisms_comparison.eps>
-(epstopdf)             \includegraphics on input line 558.
+(epstopdf)             \includegraphics on input line 561.
 Package epstopdf Info: Output file is already uptodate.
-<figures/2Prisms_comparison-eps-converted-to.pdf, id=776, 845.1575pt x 550.055p
+<figures/2Prisms_comparison-eps-converted-to.pdf, id=667, 845.1575pt x 550.055p
 t>
 File: figures/2Prisms_comparison-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/2Prisms_comparison-eps-converted-to.pdf>
 Package pdftex.def Info: figures/2Prisms_comparison-eps-converted-to.pdf  used 
-on input line 558.
+on input line 561.
 (pdftex.def)             Requested size: 432.48192pt x 281.48116pt.
- [40 <./figures/vertices_2d_slices-eps-converted-to.pdf>] [41 <./figures/2Prism
+ [32 <./figures/vertices_2d_slices-eps-converted-to.pdf>] [33 <./figures/2Prism
 s_comparison-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/uvpq.eps>
 (epstopdf)                    date: 2020-05-21 13:55:30
@@ -1904,15 +1923,15 @@ Package epstopdf Info: Source file: <figures/uvpq.eps>
 (epstopdf)                    size: 7453 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/uvpq-eps-converted
 -to.pdf figures/uvpq.eps>
-(epstopdf)             \includegraphics on input line 571.
+(epstopdf)             \includegraphics on input line 574.
 Package epstopdf Info: Output file is already uptodate.
-<figures/uvpq-eps-converted-to.pdf, id=812, 429.605pt x 311.1625pt>
+<figures/uvpq-eps-converted-to.pdf, id=704, 429.605pt x 311.1625pt>
 File: figures/uvpq-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/uvpq-eps-converted-to.pdf>
 Package pdftex.def Info: figures/uvpq-eps-converted-to.pdf  used on input line 
-571.
+574.
 (pdftex.def)             Requested size: 216.24095pt x 156.62541pt.
- [42 <./figures/uvpq-eps-converted-to.pdf>]
+ [34 <./figures/uvpq-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/uvpq_Delaunay.eps>
 (epstopdf)                    date: 2020-05-21 13:55:07
 (epstopdf)                    size: 101337 bytes
@@ -1922,30 +1941,25 @@ Package epstopdf Info: Source file: <figures/uvpq_Delaunay.eps>
 (epstopdf)                    size: 8367 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/uvpq_Delaunay-eps-
 converted-to.pdf figures/uvpq_Delaunay.eps>
-(epstopdf)             \includegraphics on input line 600.
+(epstopdf)             \includegraphics on input line 603.
 Package epstopdf Info: Output file is already uptodate.
-<figures/uvpq_Delaunay-eps-converted-to.pdf, id=834, 421.575pt x 316.18124pt>
+<figures/uvpq_Delaunay-eps-converted-to.pdf, id=727, 421.575pt x 316.18124pt>
 File: figures/uvpq_Delaunay-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/uvpq_Delaunay-eps-converted-to.pdf>
 Package pdftex.def Info: figures/uvpq_Delaunay-eps-converted-to.pdf  used on in
-put line 600.
+put line 603.
 (pdftex.def)             Requested size: 216.24095pt x 162.18143pt.
- [43] [44 <./figures/uvpq_Delaunay-eps-converted-to.pdf>]pdfTeX warning (ext4):
+ [35] [36 <./figures/uvpq_Delaunay-eps-converted-to.pdf>]pdfTeX warning (ext4):
  destination with the same identifier (name{equation.2.3.7}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.643 \end{align}
-                  [45]
-Overfull \hbox (11.63268pt too wide) in paragraph at lines 681--720
-[][]
- []
-
-[46] [47] [48]
+l.646 \end{align}
+                  [37] [38] [39] [40]
 Overfull \vbox (15.48688pt too high) has occurred while \output is active []
 
 
-[49] [50] [51]
+[41] [42] [43]
 Package epstopdf Info: Source file: <figures/Delaunay_Connected_PrismFaces.eps>
 
 (epstopdf)                    date: 2020-05-21 13:58:43
@@ -1956,15 +1970,15 @@ converted-to.pdf>
 (epstopdf)                    size: 8141 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/Delaunay_Connected
 _PrismFaces-eps-converted-to.pdf figures/Delaunay_Connected_PrismFaces.eps>
-(epstopdf)             \includegraphics on input line 805.
+(epstopdf)             \includegraphics on input line 808.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Delaunay_Connected_PrismFaces-eps-converted-to.pdf, id=900, 414.54875p
+<figures/Delaunay_Connected_PrismFaces-eps-converted-to.pdf, id=794, 414.54875p
 t x 321.2pt>
 File: figures/Delaunay_Connected_PrismFaces-eps-converted-to.pdf Graphic file (
 type pdf)
 <use figures/Delaunay_Connected_PrismFaces-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Delaunay_Connected_PrismFaces-eps-converted-to
-.pdf  used on input line 805.
+.pdf  used on input line 808.
 (pdftex.def)             Requested size: 432.48192pt x 335.10367pt.
 Package epstopdf Info: Source file: <figures/Curvilinear_grid.eps>
 (epstopdf)                    date: 2020-05-28 17:16:19
@@ -1975,14 +1989,14 @@ pdf>
 (epstopdf)                    size: 557994 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/Curvilinear_grid-e
 ps-converted-to.pdf figures/Curvilinear_grid.eps>
-(epstopdf)             \includegraphics on input line 813.
+(epstopdf)             \includegraphics on input line 817.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Curvilinear_grid-eps-converted-to.pdf, id=902, 827.09pt x 620.3175pt>
+<figures/Curvilinear_grid-eps-converted-to.pdf, id=798, 827.09pt x 620.3175pt>
 File: figures/Curvilinear_grid-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Curvilinear_grid-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Curvilinear_grid-eps-converted-to.pdf  used on
- input line 813.
-(pdftex.def)             Requested size: 432.48192pt x 324.36536pt.
+ input line 817.
+(pdftex.def)             Requested size: 389.23108pt x 291.92787pt.
 Package epstopdf Info: Source file: <figures/Curvilinear_grid_prisms_tetra.eps>
 
 (epstopdf)                    date: 2020-05-28 17:16:40
@@ -1993,25 +2007,46 @@ converted-to.pdf>
 (epstopdf)                    size: 121450 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/Curvilinear_grid_p
 risms_tetra-eps-converted-to.pdf figures/Curvilinear_grid_prisms_tetra.eps>
-(epstopdf)             \includegraphics on input line 818.
+(epstopdf)             \includegraphics on input line 822.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Curvilinear_grid_prisms_tetra-eps-converted-to.pdf, id=905, 1445.4pt x
+<figures/Curvilinear_grid_prisms_tetra-eps-converted-to.pdf, id=801, 1445.4pt x
  682.55pt>
 File: figures/Curvilinear_grid_prisms_tetra-eps-converted-to.pdf Graphic file (
 type pdf)
 <use figures/Curvilinear_grid_prisms_tetra-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Curvilinear_grid_prisms_tetra-eps-converted-to
-.pdf  used on input line 818.
+.pdf  used on input line 822.
 (pdftex.def)             Requested size: 432.48192pt x 204.225pt.
-) (./Inaccuracies.tex [52 <./figures/Delaunay_Connected_PrismFaces-eps-converte
-d-to.pdf>] [53 <./figures/Curvilinear_grid-eps-converted-to.pdf> <./figures/Cur
-vilinear_grid_prisms_tetra-eps-converted-to.pdf>]
+ [44 <./figures/Delaunay_Connected_PrismFaces-eps-converted-to.pdf>]
+
+LaTeX Warning: Text page 45 contains only floats.
+
+[45 <./figures/Curvilinear_grid-eps-converted-to.pdf> <./figures/Curvilinear_gr
+id_prisms_tetra-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/orbit_comparison.eps>
+(epstopdf)                    date: 2020-06-23 18:00:36
+(epstopdf)                    size: 2988272 bytes
+(epstopdf)             Output file: <figures/orbit_comparison-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2020-07-30 15:01:46
+(epstopdf)                    size: 2230055 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/orbit_comparison-e
+ps-converted-to.pdf figures/orbit_comparison.eps>
+(epstopdf)             \includegraphics on input line 832.
+Package epstopdf Info: Output file is already uptodate.
+<figures/orbit_comparison-eps-converted-to.pdf, id=835, 961.5925pt x 521.95pt>
+File: figures/orbit_comparison-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/orbit_comparison-eps-converted-to.pdf>
+Package pdftex.def Info: figures/orbit_comparison-eps-converted-to.pdf  used on
+ input line 832.
+(pdftex.def)             Requested size: 432.48192pt x 234.75586pt.
+) (./Inaccuracies.tex [46 <./figures/orbit_comparison-eps-converted-to.pdf>]
 Chapter 3.
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 44.
 
-[54
+[47
 
 ]
 
@@ -2020,19 +2055,19 @@ Make it at least 27.11469pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[55] [56pdfTeX warning (ext4): destination with the same identifier (name{equat
+[48] [49pdfTeX warning (ext4): destination with the same identifier (name{equat
 ion.3.1.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.125 \ee
-         ] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67]
+         ] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60]
 Overfull \hbox (15.65373pt too wide) detected at line 542
 []
  []
 
-[68]
-<figures/RK4_alpha555_cyl.pdf, id=1118, 1129.21875pt x 602.25pt>
+[61]
+<figures/RK4_alpha555_cyl.pdf, id=1034, 1129.21875pt x 602.25pt>
 File: figures/RK4_alpha555_cyl.pdf Graphic file (type pdf)
 <use figures/RK4_alpha555_cyl.pdf>
 Package pdftex.def Info: figures/RK4_alpha555_cyl.pdf  used on input line 583.
@@ -2042,8 +2077,8 @@ Overfull \hbox (86.49506pt too wide) in paragraph at lines 583--584
  [][] 
  []
 
-[69] [70]
-<figures/RK4_alpha121212_cyl.pdf, id=1130, 1129.21875pt x 602.25pt>
+[62] [63]
+<figures/RK4_alpha121212_cyl.pdf, id=1048, 1129.21875pt x 602.25pt>
 File: figures/RK4_alpha121212_cyl.pdf Graphic file (type pdf)
 <use figures/RK4_alpha121212_cyl.pdf>
 Package pdftex.def Info: figures/RK4_alpha121212_cyl.pdf  used on input line 59
@@ -2054,7 +2089,7 @@ Overfull \hbox (86.49506pt too wide) in paragraph at lines 596--597
  [][] 
  []
 
-<figures/RK4_alpha555_SFC.pdf, id=1131, 1129.21875pt x 602.25pt>
+<figures/RK4_alpha555_SFC.pdf, id=1049, 1129.21875pt x 602.25pt>
 File: figures/RK4_alpha555_SFC.pdf Graphic file (type pdf)
 <use figures/RK4_alpha555_SFC.pdf>
 Package pdftex.def Info: figures/RK4_alpha555_SFC.pdf  used on input line 602.
@@ -2064,7 +2099,7 @@ Overfull \hbox (86.49506pt too wide) in paragraph at lines 602--603
  [][] 
  []
 
-<figures/RK4_alpha121212_SFC.pdf, id=1132, 1129.21875pt x 602.25pt>
+<figures/RK4_alpha121212_SFC.pdf, id=1050, 1129.21875pt x 602.25pt>
 File: figures/RK4_alpha121212_SFC.pdf Graphic file (type pdf)
 <use figures/RK4_alpha121212_SFC.pdf>
 Package pdftex.def Info: figures/RK4_alpha121212_SFC.pdf  used on input line 61
@@ -2075,12 +2110,12 @@ Overfull \hbox (86.49506pt too wide) in paragraph at lines 614--615
  [][] 
  []
 
-[71 <./figures/RK4_alpha555_cyl.pdf>]
+[64 <./figures/RK4_alpha555_cyl.pdf>]
 Overfull \vbox (1.44182pt too high) has occurred while \output is active []
 
 
-[72 <./figures/RK4_alpha121212_cyl.pdf> <./figures/RK4_alpha555_SFC.pdf>]
-[73 <./figures/RK4_alpha121212_SFC.pdf>]) (./Pushers.tex
+[65 <./figures/RK4_alpha121212_cyl.pdf> <./figures/RK4_alpha555_SFC.pdf>]
+[66 <./figures/RK4_alpha121212_SFC.pdf>]) (./Pushers.tex
 Chapter 4.
 Package epstopdf Info: Source file: <figures/triangle01.eps>
 (epstopdf)                    date: 2020-06-23 18:00:36
@@ -2092,63 +2127,58 @@ Package epstopdf Info: Source file: <figures/triangle01.eps>
 verted-to.pdf figures/triangle01.eps>
 (epstopdf)             \includegraphics on input line 9.
 Package epstopdf Info: Output file is already uptodate.
-<figures/triangle01-eps-converted-to.pdf, id=1229, 1043.9pt x 772.8875pt>
+<figures/triangle01-eps-converted-to.pdf, id=1148, 1043.9pt x 772.8875pt>
 File: figures/triangle01-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/triangle01-eps-converted-to.pdf>
 Package pdftex.def Info: figures/triangle01-eps-converted-to.pdf  used on input
  line 9.
 (pdftex.def)             Requested size: 216.24095pt x 192.58592pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 18.
 
-[74
+[67
 
  <./figures/triangle01-eps-converted-to.pdf>]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 18.
- [75]
-<figures/pusher_tetra_orbit.pdf, id=1248, 578.16pt x 433.62pt>
+ [68]
+<figures/pusher_tetra_orbit.pdf, id=1168, 578.16pt x 433.62pt>
 File: figures/pusher_tetra_orbit.pdf Graphic file (type pdf)
 <use figures/pusher_tetra_orbit.pdf>
 Package pdftex.def Info: figures/pusher_tetra_orbit.pdf  used on input line 23.
 
 (pdftex.def)             Requested size: 432.48192pt x 324.36067pt.
- [76 <./figures/pusher_tetra_orbit.pdf>] [77]
+ [69 <./figures/pusher_tetra_orbit.pdf>] [70]
 Overfull \hbox (25.31676pt too wide) in paragraph at lines 76--113
 [][]
  []
 
-
-Overfull \hbox (7.78989pt too wide) in paragraph at lines 118--120
-\T1/cmr/m/n/12 (-20) In the \T1/cmtt/m/n/12 pusher_tetra_orbit \T1/cmr/m/n/12 (
--20) sub-rou-tine, first an ini-tial-izer sub-rou-tine \T1/cmtt/m/n/12 initiali
-ze_push
- []
-
-[78]
+[71]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 123.
- [79] [80]
+ [72] [73]
 Overfull \vbox (15.48688pt too high) has occurred while \output is active []
 
 
-[81]
+[74]
 Overfull \vbox (15.48688pt too high) has occurred while \output is active []
 
 
-[82] [83] [84]
-Overfull \hbox (5.05016pt too wide) in paragraph at lines 231--231
-[]\T1/cmr/bx/n/17.28 Search rou-tine for tetra-he-dra with start-ing points 
- []
-
-) (./Transport.tex [85]
+[75] [76] [77]) (./Transport.tex [78]
 Chapter 5.
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 31.
 
-[86
+[79
 
 ]
 Package epstopdf Info: Source file: <figures/transport_coefficient_electrons_di
@@ -2164,7 +2194,7 @@ ent_electrons_dions-eps-converted-to.pdf figures/transport_coefficient_electron
 s_dions.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
-<figures/transport_coefficient_electrons_dions-eps-converted-to.pdf, id=1374, 1
+<figures/transport_coefficient_electrons_dions-eps-converted-to.pdf, id=1295, 1
 318.9275pt x 873.2625pt>
 File: figures/transport_coefficient_electrons_dions-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -2183,7 +2213,7 @@ erted-to.pdf>
 s_dions-eps-converted-to.pdf figures/cpu_speed_electrons_dions.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<figures/cpu_speed_electrons_dions-eps-converted-to.pdf, id=1380, 1505.625pt x 
+<figures/cpu_speed_electrons_dions-eps-converted-to.pdf, id=1301, 1505.625pt x 
 1108.14pt>
 File: figures/cpu_speed_electrons_dions-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2191,17 +2221,17 @@ File: figures/cpu_speed_electrons_dions-eps-converted-to.pdf Graphic file (type
 Package pdftex.def Info: figures/cpu_speed_electrons_dions-eps-converted-to.pdf
   used on input line 86.
 (pdftex.def)             Requested size: 475.73274pt x 350.13121pt.
- [87] [88 <./figures/transport_coefficient_electrons_dions-eps-converted-to.pdf
->] [89 <./figures/cpu_speed_electrons_dions-eps-converted-to.pdf>] [90])
+ [80] [81 <./figures/transport_coefficient_electrons_dions-eps-converted-to.pdf
+>] [82 <./figures/cpu_speed_electrons_dions-eps-converted-to.pdf>] [83])
 (./ConclusionOutlook.tex
 Chapter 6.
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 9.
 
-[91
+[84
 
-] [92]) (./Appendix.tex
+] [85]) (./Appendix.tex
 Appendix A.
 Package epstopdf Info: Source file: <figures/lagrange_interp_plot1.eps>
 (epstopdf)                    date: 2020-03-17 16:03:28
@@ -2214,7 +2244,7 @@ d-to.pdf>
 ot1-eps-converted-to.pdf figures/lagrange_interp_plot1.eps>
 (epstopdf)             \includegraphics on input line 38.
 Package epstopdf Info: Output file is already uptodate.
-<figures/lagrange_interp_plot1-eps-converted-to.pdf, id=1436, 1556.81625pt x 89
+<figures/lagrange_interp_plot1-eps-converted-to.pdf, id=1359, 1556.81625pt x 89
 5.345pt>
 File: figures/lagrange_interp_plot1-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2226,52 +2256,52 @@ ed on input line 38.
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 41.
 
-[93
+[86
 
-] [94 <./figures/lagrange_interp_plot1-eps-converted-to.pdf>]
+] [87 <./figures/lagrange_interp_plot1-eps-converted-to.pdf>]
 Appendix B.
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 88.
 
-[95
+[88
 
-] [96] [97]
+] [89] [90]
 Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
-) (./Bibliography.tex [98
+) (./Bibliography.tex [91
 
 ]
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 25.
 
-[99
+[92
 
-]) [100]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 23.
+]) [93]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 23.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 23.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 813EB716037C5942B6A91781E0092388;3896.
+(rerunfilecheck)             Checksum: E49D788578CBC0F078CEBEFD4EF6E0AA;4059.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
  ) 
 Here is how much of TeX's memory you used:
- 47149 strings out of 492609
- 1046295 string characters out of 6131462
- 1247332 words of memory out of 5000000
- 49771 multiletter control sequences out of 15000+600000
- 573578 words of font info for 237 fonts, out of 8000000 for 9000
+ 47161 strings out of 492609
+ 1047056 string characters out of 6131462
+ 1238736 words of memory out of 5000000
+ 49780 multiletter control sequences out of 15000+600000
+ 573461 words of font info for 236 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,19n,96p,3161b,964s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,19n,96p,3161b,962s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -2301,10 +2331,10 @@ public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
 ublic/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1
 200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1440.pfb></usr/share/
 texmf/fonts/type1/public/cm-super/sftt1728.pfb>
-Output written on main.pdf (100 pages, 3049917 bytes).
+Output written on main.pdf (100 pages, 5314517 bytes).
 PDF statistics:
- 1672 PDF objects out of 1728 (max. 8388607)
- 1380 compressed objects within 14 object streams
- 320 named destinations out of 1000 (max. 500000)
- 46142 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1597 PDF objects out of 1728 (max. 8388607)
+ 1304 compressed objects within 14 object streams
+ 321 named destinations out of 1000 (max. 500000)
+ 46171 words of extra memory for PDF output out of 51595 (max. 10000000)
 

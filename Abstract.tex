@@ -1,22 +1,10 @@
-\documentclass[../main.tex]{subfiles}
+\documentclass[./main.tex]{subfiles}
 \addcontentsline{toc}{chapter}{Abstract}
+\begin{document}
 \chapter*{Abstract}
 \label{cha:abstract}
-
-
-This is a placeholder for the abstract. It summarizes the whole thesis
-to give a very short overview. Usually, this the abstract is written
-when the whole thesis text is finished.
-
-
-
-%\glsresetall %% all glossary entries should be used in long form (again)
-%% vim:foldmethod=expr
-%% vim:fde=getline(v\:lnum)=~'^%%%%\ .\\+'?'>1'\:'='
-%%% Local Variables:
-%%% mode: latex
-%%% mode: auto-fill
-%%% mode: flyspell
-%%% eval: (ispell-change-dictionary "en_US")
-%%% TeX-master: "main"
-%%% End:
+Efficient orbit integrators are a key element of gyro-kinetic codes used for computation of kinetic plasma equilibria and quasi-steady plasma parameters. To this end, the geometric guiding center integrator \textit{GORILLA}  (Geometric ORbit Integration with Local Linearisation Approach) has been further developed in this thesis. In \textit{GORILLA}, guiding center orbits for locally linearized fields are traced within a tetrahedral grid. This integrator exhibits desirable features, namely, high computational efficiency and low sensitivity to statistical noise in electro-magnetic field components, and high long term stability due to the symplectic formulation of the guiding center equations. Furthermore, it enables very efficient box counting for computation of distribution functions due to the implicit evaluation of particle orbits at cell boundaries.
+Within this thesis, several enhancements for the code \textit{GORILLA} have been introduced.
+Calculations are performed in symmetry flux coordinates in a field aligned grid, in order to avoid interpolation errors. Additionally, an analytical solution of the guiding-center equations in linearized fields is derived, allowing for the description of the errors associated with the numerical integration of ordinary differential equation sets using Runge-Kutta 4.  
+Furthermore, the derivation of an analytical power series has allowed to implement new efficient approaches for integrating the guiding-center orbit and for computing intersections of these orbits with the cell boundaries of grid elements. The neo-classical mono-energetic radial diffusion coefficient has been evaluated in Monte Carlo simulations, using different orbit integration methods. Based on these results, a comparison between the adaptive step size Runge-Kutta 4/5 integrator in non-linearized fields and \textit{GORILLA} has shown that the underlying physics is well preserved in \textit{GORILLA} while its computational efficiency is larger by one order of magnitude compared to Runge-Kutta 4/5. Thus, \textit{GORILLA} represents a powerful tool for both accurate and efficient gyro-kinetic applications.
+\end{document}
