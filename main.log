@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.17)  2 AUG 2020 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.17)  10 AUG 2020 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1473,87 +1473,98 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Titlepage_Diploma_Thesis_Lukas_Bauer.
-pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./unsigned_Titlepage_Diploma_Thesis_Luk
+as_Bauer.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
+> allowed
+<unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, id=212, 597.55246pt x 845.0
+7724pt>
+File: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
 
-<Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, id=212, 597.55246pt x 845.07724pt>
-File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
-<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>
-Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf  used on inpu
-t line 5.
+<use unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>
+Package pdftex.def Info: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf  use
+d on input line 6.
 (pdftex.def)             Requested size: 597.551pt x 845.07518pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Titlepage_Diploma_Thesis_Lukas_Bauer.
-pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./unsigned_Titlepage_Diploma_Thesis_Luk
+as_Bauer.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
+> allowed
+File: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
 
-File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
-<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>
-Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf  used on inpu
-t line 5.
+<use unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>
+Package pdftex.def Info: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf  use
+d on input line 6.
 (pdftex.def)             Requested size: 597.551pt x 845.07518pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Titlepage_Diploma_Thesis_Lukas_Bauer.
-pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./unsigned_Titlepage_Diploma_Thesis_Luk
+as_Bauer.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
+> allowed
 
 
+pdfTeX warning: /usr/bin/pdflatex (file ./unsigned_Titlepage_Diploma_Thesis_Luk
+as_Bauer.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
+> allowed
+<unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, id=215, page=1, 597.55246pt
+ x 845.07724pt>
+File: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Titlepage_Diploma_Thesis_Lukas_Bauer.
-pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-
-<Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, id=215, page=1, 597.55246pt x 845.07
-724pt>
-File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
-<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
-Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page1 used 
-on input line 5.
+<use unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
+Package pdftex.def Info: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , pa
+ge1 used on input line 6.
 (pdftex.def)             Requested size: 597.551pt x 845.07518pt.
-File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
-<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
-Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page1 used 
-on input line 5.
+File: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+
+<use unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
+Package pdftex.def Info: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , pa
+ge1 used on input line 6.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
-File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
-<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
-Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page1 used 
-on input line 5.
+File: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+
+<use unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
+Package pdftex.def Info: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , pa
+ge1 used on input line 6.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
-File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
-<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
-Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page1 used 
-on input line 5.
+File: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+
+<use unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
+Package pdftex.def Info: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , pa
+ge1 used on input line 6.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
-File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
-<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
-Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page1 used 
-on input line 5.
+File: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+
+<use unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 1>
+Package pdftex.def Info: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , pa
+ge1 used on input line 6.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
 [1
 
- <./Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>]
+ <./unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>]
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Titlepage_Diploma_Thesis_Lukas_Bauer.
-pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./unsigned_Titlepage_Diploma_Thesis_Luk
+as_Bauer.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
+> allowed
+<unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, id=222, page=2, 597.55246pt
+ x 845.07724pt>
+File: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
 
-<Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, id=222, page=2, 597.55246pt x 845.07
-724pt>
-File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
-<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 2>
-Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page2 used 
-on input line 5.
+<use unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 2>
+Package pdftex.def Info: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , pa
+ge2 used on input line 6.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
-File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
-<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 2>
-Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page2 used 
-on input line 5.
+File: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+
+<use unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 2>
+Package pdftex.def Info: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , pa
+ge2 used on input line 6.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
-File: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
-<use Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 2>
-Package pdftex.def Info: Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , page2 used 
-on input line 5.
+File: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf Graphic file (type pdf)
+
+<use unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf, page 2>
+Package pdftex.def Info: unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf , pa
+ge2 used on input line 6.
 (pdftex.def)             Requested size: 597.57834pt x 845.11386pt.
-[2 <./Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>] (./Abstract.tex)
+[2 <./unsigned_Titlepage_Diploma_Thesis_Lukas_Bauer.pdf>] (./Abstract.tex)
 (./Kurzfassung.tex
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
@@ -1569,21 +1580,50 @@ This may cause the page layout to be inconsistent, however.
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./Acknowledgements.tex
-Overfull \hbox (3.42213pt too wide) in paragraph at lines 6--4
+Overfull \hbox (3.42213pt too wide) in paragraph at lines 7--3
 \T1/cmr/m/n/12 (-20) rokinetis-chen Sim-u-la-tion-spro-gram-men. Für diese An-w
 en-dun-gen wurde der ge-ometrische
  []
 
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 4.
+less on input line 3.
 
 [4
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 18--14
+
+ []
+
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 13.
+less on input line 14.
 
 [5
 
@@ -1607,8 +1647,26 @@ Package microtype Info: Loading generic protrusion settings for font family
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
+ [7] (./main.lof
 
-(./Introduction.tex [7]
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 14.
+
+[8
+
+] [9]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+
+(./Introduction.tex [10]
 Chapter 1.
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
@@ -1650,25 +1708,25 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/Tetra_split-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figures/Tetra_split-eps-converted-to.pdf, id=356, 1152.305pt x 1018.80624pt>
+<figures/Tetra_split-eps-converted-to.pdf, id=507, 1152.305pt x 1018.80624pt>
 File: figures/Tetra_split-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Tetra_split-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Tetra_split-eps-converted-to.pdf  used on inpu
 t line 58.
 (pdftex.def)             Requested size: 345.98685pt x 305.90851pt.
 [7] [8 <./figures/Tetra_split-eps-converted-to.pdf>] [9]
-<figures/full_grid_rect.png, id=385, 1018.80624pt x 809.0225pt>
+<figures/full_grid_rect.png, id=536, 1018.80624pt x 809.0225pt>
 File: figures/full_grid_rect.png Graphic file (type png)
 <use figures/full_grid_rect.png>
 Package pdftex.def Info: figures/full_grid_rect.png  used on input line 92.
 (pdftex.def)             Requested size: 194.61554pt x 154.54297pt.
-<figures/slice_grid_rect.png, id=387, 978.65625pt x 1032.85875pt>
+<figures/slice_grid_rect.png, id=538, 978.65625pt x 1032.85875pt>
 File: figures/slice_grid_rect.png Graphic file (type png)
 <use figures/slice_grid_rect.png>
 Package pdftex.def Info: figures/slice_grid_rect.png  used on input line 98.
 (pdftex.def)             Requested size: 194.61554pt x 205.38608pt.
  [10 <./figures/full_grid_rect.png> <./figures/slice_grid_rect.png>]
-<figures/field_lines_rect_grid.pdf, id=401, 568.1225pt x 422.57875pt>
+<figures/field_lines_rect_grid.pdf, id=550, 568.1225pt x 422.57875pt>
 File: figures/field_lines_rect_grid.pdf Graphic file (type pdf)
 <use figures/field_lines_rect_grid.pdf>
 Package pdftex.def Info: figures/field_lines_rect_grid.pdf  used on input line 
@@ -1690,7 +1748,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/field_lines_fine_rect_grid-ep
 s-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
 n <1.5> allowed
-<figures/field_lines_fine_rect_grid-eps-converted-to.pdf, id=402, 422.57875pt x
+<figures/field_lines_fine_rect_grid-eps-converted-to.pdf, id=551, 422.57875pt x
  317.185pt>
 File: figures/field_lines_fine_rect_grid-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1705,7 +1763,7 @@ Overfull \hbox (2.61047pt too wide) in paragraph at lines 108--122
 
 [11 <./figures/field_lines_rect_grid.pdf> <./figures/field_lines_fine_rect_grid
 -eps-converted-to.pdf>] [12]
-<figures/field_lines_torus.pdf, id=433, 867.24pt x 578.16pt>
+<figures/field_lines_torus.pdf, id=581, 867.24pt x 578.16pt>
 File: figures/field_lines_torus.pdf Graphic file (type pdf)
 <use figures/field_lines_torus.pdf>
 Package pdftex.def Info: figures/field_lines_torus.pdf  used on input line 159.
@@ -1716,7 +1774,7 @@ Package pdftex.def Info: figures/field_lines_torus.pdf  used on input line 159.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13] [14 <./figures/field_lines_torus.pdf>] [15]
-<figures/fli_angle_graphics.pdf, id=480, 597.50786pt x 845.04686pt>
+<figures/fli_angle_graphics.pdf, id=629, 597.50786pt x 845.04686pt>
 File: figures/fli_angle_graphics.pdf Graphic file (type pdf)
 <use figures/fli_angle_graphics.pdf>
 Package pdftex.def Info: figures/fli_angle_graphics.pdf  used on input line 196
@@ -1733,7 +1791,7 @@ ta_in_symfluxcoord_ext(inp_label,s,psi,
  []
 
 [19] [20]
-<figures/make_tetra_grid_graphics.pdf, id=544, 578.16pt x 433.62pt>
+<figures/make_tetra_grid_graphics.pdf, id=690, 578.16pt x 433.62pt>
 File: figures/make_tetra_grid_graphics.pdf Graphic file (type pdf)
 <use figures/make_tetra_grid_graphics.pdf>
 Package pdftex.def Info: figures/make_tetra_grid_graphics.pdf  used on input li
@@ -1762,7 +1820,7 @@ erted-to.pdf>
 nulus_a-eps-converted-to.pdf figures/Comparison_smin_annulus_a.eps>
 (epstopdf)             \includegraphics on input line 446.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Comparison_smin_annulus_a-eps-converted-to.pdf, id=599, 394.47375pt x 
+<figures/Comparison_smin_annulus_a-eps-converted-to.pdf, id=744, 394.47375pt x 
 420.57124pt>
 File: figures/Comparison_smin_annulus_a-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1781,7 +1839,7 @@ erted-to.pdf>
 nulus_b-eps-converted-to.pdf figures/Comparison_smin_annulus_b.eps>
 (epstopdf)             \includegraphics on input line 453.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Comparison_smin_annulus_b-eps-converted-to.pdf, id=600, 394.47375pt x 
+<figures/Comparison_smin_annulus_b-eps-converted-to.pdf, id=745, 394.47375pt x 
 420.57124pt>
 File: figures/Comparison_smin_annulus_b-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1828,7 +1886,7 @@ ed-to.pdf>
 shed-eps-converted-to.pdf figures/grid_flux_theta_meshed.eps>
 (epstopdf)             \includegraphics on input line 503.
 Package epstopdf Info: Output file is already uptodate.
-<figures/grid_flux_theta_meshed-eps-converted-to.pdf, id=628, 235.88126pt x 353
+<figures/grid_flux_theta_meshed-eps-converted-to.pdf, id=774, 235.88126pt x 353
 .32pt>
 File: figures/grid_flux_theta_meshed-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1847,7 +1905,7 @@ ed-to.pdf>
 shed-eps-converted-to.pdf figures/grid_geom_theta_meshed.eps>
 (epstopdf)             \includegraphics on input line 510.
 Package epstopdf Info: Output file is already uptodate.
-<figures/grid_geom_theta_meshed-eps-converted-to.pdf, id=629, 235.88126pt x 354
+<figures/grid_geom_theta_meshed-eps-converted-to.pdf, id=775, 235.88126pt x 354
 .32375pt>
 File: figures/grid_geom_theta_meshed-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1887,7 +1945,7 @@ o.pdf>
 -eps-converted-to.pdf figures/vertices_2d_slices.eps>
 (epstopdf)             \includegraphics on input line 553.
 Package epstopdf Info: Output file is already uptodate.
-<figures/vertices_2d_slices-eps-converted-to.pdf, id=659, 706.64pt x 504.88625p
+<figures/vertices_2d_slices-eps-converted-to.pdf, id=802, 706.64pt x 504.88625p
 t>
 File: figures/vertices_2d_slices-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/vertices_2d_slices-eps-converted-to.pdf>
@@ -1906,7 +1964,7 @@ o.pdf>
 -eps-converted-to.pdf figures/2Prisms_comparison.eps>
 (epstopdf)             \includegraphics on input line 561.
 Package epstopdf Info: Output file is already uptodate.
-<figures/2Prisms_comparison-eps-converted-to.pdf, id=667, 845.1575pt x 550.055p
+<figures/2Prisms_comparison-eps-converted-to.pdf, id=809, 845.1575pt x 550.055p
 t>
 File: figures/2Prisms_comparison-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/2Prisms_comparison-eps-converted-to.pdf>
@@ -1925,7 +1983,7 @@ Package epstopdf Info: Source file: <figures/uvpq.eps>
 -to.pdf figures/uvpq.eps>
 (epstopdf)             \includegraphics on input line 574.
 Package epstopdf Info: Output file is already uptodate.
-<figures/uvpq-eps-converted-to.pdf, id=704, 429.605pt x 311.1625pt>
+<figures/uvpq-eps-converted-to.pdf, id=846, 429.605pt x 311.1625pt>
 File: figures/uvpq-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/uvpq-eps-converted-to.pdf>
 Package pdftex.def Info: figures/uvpq-eps-converted-to.pdf  used on input line 
@@ -1943,7 +2001,7 @@ Package epstopdf Info: Source file: <figures/uvpq_Delaunay.eps>
 converted-to.pdf figures/uvpq_Delaunay.eps>
 (epstopdf)             \includegraphics on input line 603.
 Package epstopdf Info: Output file is already uptodate.
-<figures/uvpq_Delaunay-eps-converted-to.pdf, id=727, 421.575pt x 316.18124pt>
+<figures/uvpq_Delaunay-eps-converted-to.pdf, id=868, 421.575pt x 316.18124pt>
 File: figures/uvpq_Delaunay-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/uvpq_Delaunay-eps-converted-to.pdf>
 Package pdftex.def Info: figures/uvpq_Delaunay-eps-converted-to.pdf  used on in
@@ -1972,7 +2030,7 @@ converted-to.pdf>
 _PrismFaces-eps-converted-to.pdf figures/Delaunay_Connected_PrismFaces.eps>
 (epstopdf)             \includegraphics on input line 808.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Delaunay_Connected_PrismFaces-eps-converted-to.pdf, id=794, 414.54875p
+<figures/Delaunay_Connected_PrismFaces-eps-converted-to.pdf, id=933, 414.54875p
 t x 321.2pt>
 File: figures/Delaunay_Connected_PrismFaces-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -1991,7 +2049,7 @@ pdf>
 ps-converted-to.pdf figures/Curvilinear_grid.eps>
 (epstopdf)             \includegraphics on input line 817.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Curvilinear_grid-eps-converted-to.pdf, id=798, 827.09pt x 620.3175pt>
+<figures/Curvilinear_grid-eps-converted-to.pdf, id=937, 827.09pt x 620.3175pt>
 File: figures/Curvilinear_grid-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Curvilinear_grid-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Curvilinear_grid-eps-converted-to.pdf  used on
@@ -2009,7 +2067,7 @@ converted-to.pdf>
 risms_tetra-eps-converted-to.pdf figures/Curvilinear_grid_prisms_tetra.eps>
 (epstopdf)             \includegraphics on input line 822.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Curvilinear_grid_prisms_tetra-eps-converted-to.pdf, id=801, 1445.4pt x
+<figures/Curvilinear_grid_prisms_tetra-eps-converted-to.pdf, id=940, 1445.4pt x
  682.55pt>
 File: figures/Curvilinear_grid_prisms_tetra-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -2034,7 +2092,7 @@ pdf>
 ps-converted-to.pdf figures/orbit_comparison.eps>
 (epstopdf)             \includegraphics on input line 832.
 Package epstopdf Info: Output file is already uptodate.
-<figures/orbit_comparison-eps-converted-to.pdf, id=835, 961.5925pt x 521.95pt>
+<figures/orbit_comparison-eps-converted-to.pdf, id=972, 961.5925pt x 521.95pt>
 File: figures/orbit_comparison-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/orbit_comparison-eps-converted-to.pdf>
 Package pdftex.def Info: figures/orbit_comparison-eps-converted-to.pdf  used on
@@ -2067,7 +2125,7 @@ Overfull \hbox (15.65373pt too wide) detected at line 542
  []
 
 [61]
-<figures/RK4_alpha555_cyl.pdf, id=1034, 1129.21875pt x 602.25pt>
+<figures/RK4_alpha555_cyl.pdf, id=1168, 1129.21875pt x 602.25pt>
 File: figures/RK4_alpha555_cyl.pdf Graphic file (type pdf)
 <use figures/RK4_alpha555_cyl.pdf>
 Package pdftex.def Info: figures/RK4_alpha555_cyl.pdf  used on input line 583.
@@ -2078,7 +2136,7 @@ Overfull \hbox (86.49506pt too wide) in paragraph at lines 583--584
  []
 
 [62] [63]
-<figures/RK4_alpha121212_cyl.pdf, id=1048, 1129.21875pt x 602.25pt>
+<figures/RK4_alpha121212_cyl.pdf, id=1181, 1129.21875pt x 602.25pt>
 File: figures/RK4_alpha121212_cyl.pdf Graphic file (type pdf)
 <use figures/RK4_alpha121212_cyl.pdf>
 Package pdftex.def Info: figures/RK4_alpha121212_cyl.pdf  used on input line 59
@@ -2089,7 +2147,7 @@ Overfull \hbox (86.49506pt too wide) in paragraph at lines 596--597
  [][] 
  []
 
-<figures/RK4_alpha555_SFC.pdf, id=1049, 1129.21875pt x 602.25pt>
+<figures/RK4_alpha555_SFC.pdf, id=1182, 1129.21875pt x 602.25pt>
 File: figures/RK4_alpha555_SFC.pdf Graphic file (type pdf)
 <use figures/RK4_alpha555_SFC.pdf>
 Package pdftex.def Info: figures/RK4_alpha555_SFC.pdf  used on input line 602.
@@ -2099,7 +2157,7 @@ Overfull \hbox (86.49506pt too wide) in paragraph at lines 602--603
  [][] 
  []
 
-<figures/RK4_alpha121212_SFC.pdf, id=1050, 1129.21875pt x 602.25pt>
+<figures/RK4_alpha121212_SFC.pdf, id=1183, 1129.21875pt x 602.25pt>
 File: figures/RK4_alpha121212_SFC.pdf Graphic file (type pdf)
 <use figures/RK4_alpha121212_SFC.pdf>
 Package pdftex.def Info: figures/RK4_alpha121212_SFC.pdf  used on input line 61
@@ -2127,19 +2185,12 @@ Package epstopdf Info: Source file: <figures/triangle01.eps>
 verted-to.pdf figures/triangle01.eps>
 (epstopdf)             \includegraphics on input line 9.
 Package epstopdf Info: Output file is already uptodate.
-<figures/triangle01-eps-converted-to.pdf, id=1148, 1043.9pt x 772.8875pt>
+<figures/triangle01-eps-converted-to.pdf, id=1279, 1043.9pt x 772.8875pt>
 File: figures/triangle01-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/triangle01-eps-converted-to.pdf>
 Package pdftex.def Info: figures/triangle01-eps-converted-to.pdf  used on input
  line 9.
 (pdftex.def)             Requested size: 216.24095pt x 192.58592pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
-
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 18.
@@ -2150,7 +2201,7 @@ less on input line 18.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 18.
  [68]
-<figures/pusher_tetra_orbit.pdf, id=1168, 578.16pt x 433.62pt>
+<figures/pusher_tetra_orbit.pdf, id=1298, 578.16pt x 433.62pt>
 File: figures/pusher_tetra_orbit.pdf Graphic file (type pdf)
 <use figures/pusher_tetra_orbit.pdf>
 Package pdftex.def Info: figures/pusher_tetra_orbit.pdf  used on input line 23.
@@ -2194,7 +2245,7 @@ ent_electrons_dions-eps-converted-to.pdf figures/transport_coefficient_electron
 s_dions.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
-<figures/transport_coefficient_electrons_dions-eps-converted-to.pdf, id=1295, 1
+<figures/transport_coefficient_electrons_dions-eps-converted-to.pdf, id=1424, 1
 318.9275pt x 873.2625pt>
 File: figures/transport_coefficient_electrons_dions-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -2213,7 +2264,7 @@ erted-to.pdf>
 s_dions-eps-converted-to.pdf figures/cpu_speed_electrons_dions.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<figures/cpu_speed_electrons_dions-eps-converted-to.pdf, id=1301, 1505.625pt x 
+<figures/cpu_speed_electrons_dions-eps-converted-to.pdf, id=1430, 1505.625pt x 
 1108.14pt>
 File: figures/cpu_speed_electrons_dions-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2244,7 +2295,7 @@ d-to.pdf>
 ot1-eps-converted-to.pdf figures/lagrange_interp_plot1.eps>
 (epstopdf)             \includegraphics on input line 38.
 Package epstopdf Info: Output file is already uptodate.
-<figures/lagrange_interp_plot1-eps-converted-to.pdf, id=1359, 1556.81625pt x 89
+<figures/lagrange_interp_plot1-eps-converted-to.pdf, id=1486, 1556.81625pt x 89
 5.345pt>
 File: figures/lagrange_interp_plot1-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2281,27 +2332,27 @@ less on input line 25.
 [92
 
 ]) [93]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E49D788578CBC0F078CEBEFD4EF6E0AA;4059.
+(rerunfilecheck)             Checksum: 40E962FBB87D25F99A3D860CE37F7282;4070.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
  ) 
 Here is how much of TeX's memory you used:
- 47161 strings out of 492609
- 1047056 string characters out of 6131462
- 1238736 words of memory out of 5000000
- 49780 multiletter control sequences out of 15000+600000
- 573461 words of font info for 236 fonts, out of 8000000 for 9000
+ 47177 strings out of 492609
+ 1047309 string characters out of 6131462
+ 1249529 words of memory out of 5000000
+ 49781 multiletter control sequences out of 15000+600000
+ 573929 words of font info for 240 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,19n,96p,3161b,962s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,19n,96p,3161b,964s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -2331,10 +2382,10 @@ public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
 ublic/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1
 200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1440.pfb></usr/share/
 texmf/fonts/type1/public/cm-super/sftt1728.pfb>
-Output written on main.pdf (100 pages, 5314517 bytes).
+Output written on main.pdf (103 pages, 5363264 bytes).
 PDF statistics:
- 1597 PDF objects out of 1728 (max. 8388607)
- 1304 compressed objects within 14 object streams
- 321 named destinations out of 1000 (max. 500000)
+ 1726 PDF objects out of 1728 (max. 8388607)
+ 1425 compressed objects within 15 object streams
+ 325 named destinations out of 1000 (max. 500000)
  46171 words of extra memory for PDF output out of 51595 (max. 10000000)
 

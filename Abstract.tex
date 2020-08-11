@@ -1,8 +1,8 @@
 \documentclass[./main.tex]{subfiles}
-\addcontentsline{toc}{chapter}{Abstract}
 \begin{document}
 \chapter*{Abstract}
 \label{cha:abstract}
+\addcontentsline{toc}{chapter}{Abstract}
 Efficient orbit integrators are a key element of gyro-kinetic codes used for computation of kinetic plasma equilibria and quasi-steady plasma parameters. To this end, the geometric guiding center integrator \textit{GORILLA}  (Geometric ORbit Integration with Local Linearisation Approach) has been further developed in this thesis. In \textit{GORILLA}, guiding center orbits for locally linearized fields are traced within a tetrahedral grid. This integrator exhibits desirable features, namely, high computational efficiency and low sensitivity to statistical noise in electro-magnetic field components, and high long term stability due to the symplectic formulation of the guiding center equations. Furthermore, it enables very efficient box counting for computation of distribution functions due to the implicit evaluation of particle orbits at cell boundaries.
 Within this thesis, several enhancements for the code \textit{GORILLA} have been introduced.
 Calculations are performed in symmetry flux coordinates in a field aligned grid, in order to avoid interpolation errors. Additionally, an analytical solution of the guiding-center equations in linearized fields is derived, allowing for the description of the errors associated with the numerical integration of ordinary differential equation sets using Runge-Kutta 4.  
